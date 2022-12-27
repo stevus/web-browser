@@ -1,0 +1,148 @@
+# Web Browser
+
+Initial discovery to answer questions like:
+
+- What is a Web browser? 
+- What does it do? 
+
+![](./Image.png)
+
+# Elements
+
+![](./Image_1.png)
+![](./Image_2.png)
+![](./Image_3.png)
+
+## HTML / XML Lexer / Parser
+
+This is necessary to create a DOM (Document Object Model).
+
+The module must be able to handle different content types based on MIME type.
+
+A Node Traversal Engine to separate divs by sections and to numerically number divs with alphanumeric names.
+
+| Library  | Browser  |
+| - | - |
+| Flex  |   |
+| Lex  |   |
+| Yacc  |   |
+|  Bison |   |
+|   |   |
+
+
+## CSS Lexer / Parser
+
+This module handles all of the complexity of interpreting and understanding how the properties, units of measure, and the different ways values associated with the W3C visual model can be specified (eg "border: 1px solid black" vs the separate border-width, etc properties).
+
+Nested Associative Array’s to store all CSS class and id tag’s by name and their CSS Rules for the rendering engine Parse or Loop.
+
+| Library  | Browser  |
+| - | - |
+|   |   |
+
+## Networking
+
+This module handles all of complexity / subtlety of the HTTP protocol eg data transfer, expires headers, different versions, TLS etc.
+
+Url Request Methods
+Url Multi IO Threaded Request Methods for CSS, Images, Media and JS files, these have to be live to be fast and efficient.
+
+Other things to consider:
+- How many concurrent connections to use?
+- Error reporting to the user
+- Proxies
+- User options
+
+| Library  | Browser  |
+| - | - |
+| Necko  | Firefox  |
+|   |   |
+
+## Rendering Engine
+
+This module handles how to interpret the parsed HTML and creating a plan to displaying it on the screen. Man years have gone into development of different versions of this module.
+
+A Regular Expression Engine to pre find all required HTML, CSS, JS objects and methods and counts to pre set the rendering engine before the rendering loop begins.
+
+Things like the id, tags with their widets and CSS Nested Rules need to be combined in each render loop, with some examples below:
+- A set of both Horizontal and Vertical that will handle the Cells below as box Frames for div 1 sections→
+- A Canvas or Frame that allows painting or drawing widgets and shapes as box Frames for div 1 to div 6 sections→
+- A combo of a rectangle, a label or text widget stacked for block level elements —the cells background, spacing's and colored border
+- A combo of a rectangle a label or text widget for Hyperlink Elements
+- A combo of a rectangle, a button widget for button widgets with added background borders provided by the extra drawn rectangle on the canvas.
+- A combo for every other widget the same such as entry, text entry, combo box, scroll box, radio buttons, check boxes, dividers for hr tags etc.
+
+All of this above requires massive libraries in pairs for either CSS float or display to handle Horizontal and Vertical and to store all their tag or id names by counts and sections to allow JS to do after render methods.
+
+The cell allows margins and borders between the rectangle object and the label or widget objects.
+
+Margins and padding are easily added into the widgets as integers using math and by their own names which some may require minor Tokenizing from the CSS Tokenizer earlier: Regular Expressions do not like background-color or text-width where they are confused bgy width and color after a delimiter “-color”or”-width” so minor tokenizing is required for such.
+
+```
+width=parent_width+margin_left # The Frame Notice the Regular Expression Tokenized “-” to ”_” in margin_left
+width=parent_width+padding_left etc. # The Cell
+```
+
+![](./main-qimg-b3a478b767b23d9452241a513bdbb4c3.webp)
+A Pic of Chrome beside Tk testing HTML Cell Rendering to adjust border and spacing properties.
+
+It does require math within the Cell Methods also. 
+
+CSS can be transferred without allot of Tokenizing simply by assigning the CSS value directly to the widgets value variables. Such as background=background-color etc. 
+
+Width and height have to be carried and returned for each new widtget combo in the stack also.
+
+Nothing will fully match between Webkit, Firefox and Edge spacing because of NCSA Mosaic Widgets and they also do not fully match in many ways because of differences between Spyglass and Netscape Navigator’s having a different CSS Engine while both were developed by both Sun Micro Systems and Microsoft to render CSS differently.
+
+| Library  | Browser  |
+| - | - |
+| Trident  | Internet Explorer  |
+| Gecko  | Firefox  |
+| Webkit  | Safari and Chrome 0-27  |
+| KHTML  |  KDE desktop environment. Webkit forked from KHTML some years ago |
+|  Elektra |  Opera 4-6 |
+|  Presto |  Opera 7-12  |
+| Blink  |  Chrome 28+, Opera 15+, webkit fork |
+
+## Javascript Engine
+
+A Javascript engine consists of a Lexer and a Parser.
+
+Several of these tend to be tied to a particular rendering engine.
+
+| Library  | Browser  |
+| - | - |
+| SpiderMonkey  | Gecko/Firefox  |
+| TraceMonkey  |  SpiderMonkey in Firefox 3.1 and introduces JIT (just-in-time) compilation |
+| KJS  | Konqueror, tied to KHTML  |
+|  JScript | Trident, Internet Explorer  |
+| JavascriptCore  | Webkit by the Safari browser  |
+| SquirrelFish  |  Webkit and adds JIT like TraceMonkey |
+| V8  | Google's Javascript engine used in Chrome and Opera  |
+|   |   |
+
+## GUI Toolkit
+
+This is the module that draws the elements created by the rendering engine to the screen .
+
+| Library  | Browser  |
+| - | - |
+| wxWidgets  |   |
+| Qt  |   |
+| Tcl/Tk  |   |
+| GTK  |   |
+|   |   |
+
+## User Interface
+
+This module handles displaying the UI for operations such as:
+- Navigation between pages
+- Page history
+- Clearing temporary files
+- Typing in a URL
+- Autocompleting URLs
+
+| Library  | Browser  |
+| - | - |
+| skia  | chrome  |
+|   |   |
