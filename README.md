@@ -146,3 +146,44 @@ This module handles displaying the UI for operations such as:
 | - | - |
 | skia  | chrome  |
 |   |   |
+
+## Web Browser Projects
+
+- https://joshondesign.com/tags/rust
+- https://github.com/tensor-programming/
+  - https://github.com/tensor-programming/rust_browser_6_final
+- https://github.com/joshmarinacci/rust-minibrowser
+- https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html
+  - https://github.com/mbrubeck/robinson
+- https://github.com/plateaukao/einkbro
+- https://github.com/twilco/kosmonaut
+- https://news.ycombinator.com/item?id=19553941
+
+## Open Source Web Browsers
+
+- https://librewolf.net/
+- https://www.waterfox.net/
+- https://arc.net/
+- https://www.brow.sh/
+  - https://news.ycombinator.com/item?id=17487552
+- https://servo.org/
+  - https://github.com/rockxcn/book-1/blob/master/Develop%20the%20Servo%20Web%20Browser%20Engine%20using%20Rust.pdf
+- https://awesomekling.github.io/Ladybird-a-new-cross-platform-browser-project/
+- https://news.ycombinator.com/item?id=32809126
+- https://news.ycombinator.com/item?id=24170201
+
+## How Web Browsers Work
+
+- https://developer.chrome.com/blog/inside-browser-part1/
+- https://hacks.mozilla.org/2017/10/the-whole-web-at-maximum-fps-how-webrender-gets-rid-of-jank/
+- https://www.peteresnyder.com/static/papers/speedreader-www-2019.pdf
+
+## Libraries related to Web Browsers
+
+- https://github.com/cixtor/readability
+- https://kas-gui.github.io/blog/state-of-GUI-2022.html
+
+## Ad Block for Web Browsers
+
+- https://github.com/brave/adblock-rust
+- https://www.cs.ucr.edu/~zhiyunq/pub/pets17_anti_adblocker.pdf
