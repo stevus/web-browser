@@ -9,9 +9,23 @@ Initial discovery to answer questions like:
 
 # Elements
 
+## Overview
+
+## Major Components
+
 ![](./Image_1.png)
 ![](./Image_2.png)
 ![](./Image_3.png)
+
+- https://joshondesign.com/2020/03/10/rust_minibrowser
+- https://joshondesign.com/2020/04/15/next-steps
+- https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html
+
+- https://www.youtube.com/watch?v=xNu6U5XCMMQ&list=PLJbE2Yu2zumDD5vy2BuSHvFZU0a6RDmgb&index=14
+
+### Example Implementation
+
+- https://github.com/stevus/rust_browser_6_final
 
 ## HTML / XML Lexer / Parser
 
@@ -29,6 +43,15 @@ A Node Traversal Engine to separate divs by sections and to numerically number d
 |  Bison |   |
 |   |   |
 
+- https://joshondesign.com/2020/03/14/rust_browser_parser 
+- https://joshondesign.com/2020/03/21/browser_long_slog
+- https://limpet.net/mbrubeck/2014/08/11/toy-layout-engine-2.html
+
+- https://www.youtube.com/watch?v=brhuVn91EdY
+
+### Example Implementation
+
+- https://github.com/stevus/rust_browser_part_1
 
 ## CSS Lexer / Parser
 
@@ -39,6 +62,18 @@ Nested Associative Array’s to store all CSS class and id tag’s by name and t
 | Library  | Browser  |
 | - | - |
 |   |   |
+
+- https://limpet.net/mbrubeck/2014/08/13/toy-layout-engine-3-css.html
+- https://limpet.net/mbrubeck/2014/08/23/toy-layout-engine-4-style.html
+- https://limpet.net/mbrubeck/2014/09/08/toy-layout-engine-5-boxes.html
+- https://limpet.net/mbrubeck/2014/09/17/toy-layout-engine-6-block.html
+
+- https://www.youtube.com/watch?v=dnrEto7adg0&list=PLJbE2Yu2zumDD5vy2BuSHvFZU0a6RDmgb&index=9
+
+### Example Implementation
+
+- https://github.com/stevus/rust_browser_part_2
+- https://github.com/stevus/rust_browser_part_3
 
 ## Networking
 
@@ -103,6 +138,23 @@ Nothing will fully match between Webkit, Firefox and Edge spacing because of NCS
 |  Elektra |  Opera 4-6 |
 |  Presto |  Opera 7-12  |
 | Blink  |  Chrome 28+, Opera 15+, webkit fork |
+
+- https://joshondesign.com/2020/03/24/type_madness
+- https://joshondesign.com/2020/04/08/rust5_tree
+- https://joshondesign.com/2020/04/11/rust_layout
+- https://joshondesign.com/2020/04/13/browser_render
+- https://limpet.net/mbrubeck/2014/11/05/toy-layout-engine-7-painting.html
+
+- https://www.youtube.com/watch?v=8e37RsyiGSE&list=PLJbE2Yu2zumDD5vy2BuSHvFZU0a6RDmgb&index=11
+- https://www.youtube.com/watch?v=GuzZqrlc52s&list=PLJbE2Yu2zumDD5vy2BuSHvFZU0a6RDmgb&index=12
+- https://www.youtube.com/watch?v=rszgtm7i0n8&list=PLJbE2Yu2zumDD5vy2BuSHvFZU0a6RDmgb&index=13
+- 
+
+### Example Implementation
+
+- https://github.com/stevus/rust_browser_part_3
+- https://github.com/stevus/rust_browser_part_4
+- https://github.com/stevus/rust_browser_part_5
 
 ## Javascript Engine
 
