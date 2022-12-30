@@ -20,12 +20,13 @@ Initial discovery to answer questions like:
 - https://joshondesign.com/2020/03/10/rust_minibrowser
 - https://joshondesign.com/2020/04/15/next-steps
 - https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html
+- https://browser.engineering/
 
 - https://www.youtube.com/watch?v=xNu6U5XCMMQ&list=PLJbE2Yu2zumDD5vy2BuSHvFZU0a6RDmgb&index=14
 
 ### Example Implementation
 
-- https://github.com/stevus/rust_browser_6_final
+- https://github.com/tensor-programming/rust_browser_6_final
 
 ## HTML / XML Lexer / Parser
 
@@ -51,7 +52,7 @@ A Node Traversal Engine to separate divs by sections and to numerically number d
 
 ### Example Implementation
 
-- https://github.com/stevus/rust_browser_part_1
+- https://github.com/tensor-programming/rust_browser_part_1
 
 ## CSS Lexer / Parser
 
@@ -72,8 +73,8 @@ Nested Associative Array’s to store all CSS class and id tag’s by name and t
 
 ### Example Implementation
 
-- https://github.com/stevus/rust_browser_part_2
-- https://github.com/stevus/rust_browser_part_3
+- https://github.com/tensor-programming/rust_browser_part_2
+- https://github.com/tensor-programming/rust_browser_part_3
 
 ## Networking
 
@@ -133,7 +134,7 @@ Nothing will fully match between Webkit, Firefox and Edge spacing because of NCS
 | - | - |
 | Trident  | Internet Explorer  |
 | Gecko  | Firefox  |
-| Webkit  | Safari and Chrome 0-27  |
+| [Webkit](https://github.com/WebKit/WebKit)  | Safari and Chrome 0-27  |
 | KHTML  |  KDE desktop environment. Webkit forked from KHTML some years ago |
 |  Elektra |  Opera 4-6 |
 |  Presto |  Opera 7-12  |
@@ -148,13 +149,12 @@ Nothing will fully match between Webkit, Firefox and Edge spacing because of NCS
 - https://www.youtube.com/watch?v=8e37RsyiGSE&list=PLJbE2Yu2zumDD5vy2BuSHvFZU0a6RDmgb&index=11
 - https://www.youtube.com/watch?v=GuzZqrlc52s&list=PLJbE2Yu2zumDD5vy2BuSHvFZU0a6RDmgb&index=12
 - https://www.youtube.com/watch?v=rszgtm7i0n8&list=PLJbE2Yu2zumDD5vy2BuSHvFZU0a6RDmgb&index=13
-- 
 
 ### Example Implementation
 
-- https://github.com/stevus/rust_browser_part_3
-- https://github.com/stevus/rust_browser_part_4
-- https://github.com/stevus/rust_browser_part_5
+- https://github.com/tensor-programming/rust_browser_part_3
+- https://github.com/tensor-programming/rust_browser_part_4
+- https://github.com/tensor-programming/rust_browser_part_5
 
 ## Javascript Engine
 
@@ -210,6 +210,8 @@ This module handles displaying the UI for operations such as:
 - https://github.com/plateaukao/einkbro
 - https://github.com/twilco/kosmonaut
 - https://news.ycombinator.com/item?id=19553941
+- https://kilianvalkhof.com/2020/design/how-i-built-my-own-browser/
+- https://www.infoq.com/articles/polypane-developer-browser-interview/
 
 ## Open Source Web Browsers
 
@@ -229,6 +231,7 @@ This module handles displaying the UI for operations such as:
 - https://developer.chrome.com/blog/inside-browser-part1/
 - https://hacks.mozilla.org/2017/10/the-whole-web-at-maximum-fps-how-webrender-gets-rid-of-jank/
 - https://www.peteresnyder.com/static/papers/speedreader-www-2019.pdf
+- https://hacks.mozilla.org/2020/04/code-quality-tools-at-mozilla/
 
 ## Libraries related to Web Browsers
 
