@@ -232,6 +232,7 @@ This module handles displaying the UI for operations such as:
 - https://hacks.mozilla.org/2017/10/the-whole-web-at-maximum-fps-how-webrender-gets-rid-of-jank/
 - https://www.peteresnyder.com/static/papers/speedreader-www-2019.pdf
 - https://hacks.mozilla.org/2020/04/code-quality-tools-at-mozilla/
+- https://stackoverflow.com/questions/598841/how-to-get-started-building-a-web-browser
 
 ## Libraries related to Web Browsers
 
