@@ -47,6 +47,7 @@ A Node Traversal Engine to separate divs by sections and to numerically number d
 - https://joshondesign.com/2020/03/14/rust_browser_parser 
 - https://joshondesign.com/2020/03/21/browser_long_slog
 - https://limpet.net/mbrubeck/2014/08/11/toy-layout-engine-2.html
+- https://github.com/lexborisov/myhtml
 
 - https://www.youtube.com/watch?v=brhuVn91EdY
 
