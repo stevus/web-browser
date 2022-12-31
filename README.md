@@ -30,11 +30,9 @@ Initial discovery to answer questions like:
 
 ## HTML / XML Lexer / Parser
 
-This is necessary to create a DOM (Document Object Model).
+The objective of this module is to output a DOM (Document Object Model) tree to be consumed by the rendering engine.
 
-The module must be able to handle different content types based on MIME type.
-
-A Node Traversal Engine to separate divs by sections and to numerically number divs with alphanumeric names.
+- Must be able to handle different content types based on MIME type.
 
 | Library  | Browser  |
 | - | - |
@@ -59,9 +57,9 @@ TBD
 
 ## CSS Lexer / Parser
 
-This module handles all of the complexity of interpreting and understanding how the properties, units of measure, and the different ways values associated with the W3C visual model can be specified (eg "border: 1px solid black" vs the separate border-width, etc properties).
+The objective of this module is to output a Style tree to be consumed by the rendering engine.
 
-Nested Associative Array’s to store all CSS class and id tag’s by name and their CSS Rules for the rendering engine Parse or Loop.
+- Handles all of the complexity of interpreting and understanding how the properties, units of measure, and the different ways values associated with the W3C visual model can be specified (eg "border: 1px solid black" vs the separate border-width, etc properties).
 
 | Library  | Browser  |
 | - | - |
