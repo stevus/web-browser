@@ -34,13 +34,13 @@ The objective of this module is to output a DOM (Document Object Model) tree to 
 
 - Must be able to handle different content types based on MIME type.
 
-| Library  | Browser  |
-| - | - |
-| Flex  |   |
-| Lex  |   |
-| Yacc  |   |
-|  Bison |   |
-|   |   |
+| Library  | Browser  |  Language  |
+| - | - |   -  |
+| Flex  |   |     |
+| Lex  |   |     |
+| Yacc  |   |     |
+|  Bison |   |     |
+|   |   |     |
 
 ### Creating the DOM Tree
 
@@ -61,9 +61,9 @@ The objective of this module is to output a Style tree to be consumed by the ren
 
 - Handles all of the complexity of interpreting and understanding how the properties, units of measure, and the different ways values associated with the W3C visual model can be specified (eg "border: 1px solid black" vs the separate border-width, etc properties).
 
-| Library  | Browser  |
-| - | - |
-|   |   |
+| Library  | Browser  | Language  |
+| - | - |  -   |
+|   |   |     |
 
 ### Creating the Style Tree
 
@@ -92,10 +92,10 @@ Other things to consider:
 - Proxies
 - User options
 
-| Library  | Browser  |
-| - | - |
-| Necko  | Firefox  |
-|   |   |
+| Library  | Browser  | Language  |
+| - | - |  -   |
+| Necko  | Firefox  |     |
+|   |   |     |
 
 ## Rendering Engine
 
@@ -133,15 +133,15 @@ Width and height have to be carried and returned for each new widtget combo in t
 
 Nothing will fully match between Webkit, Firefox and Edge spacing because of NCSA Mosaic Widgets and they also do not fully match in many ways because of differences between Spyglass and Netscape Navigator’s having a different CSS Engine while both were developed by both Sun Micro Systems and Microsoft to render CSS differently.
 
-| Library  | Browser  |
-| - | - |
-| Trident  | Internet Explorer  |
-| Gecko  | Firefox  |
-| [Webkit](https://github.com/WebKit/WebKit)  | Safari and Chrome 0-27  |
-| KHTML  |  KDE desktop environment. Webkit forked from KHTML some years ago |
-|  Elektra |  Opera 4-6 |
-|  Presto |  Opera 7-12  |
-| Blink  |  Chrome 28+, Opera 15+, webkit fork |
+| Library  | Browser  | Language  |
+| - | - |  -   |
+| Trident  | Internet Explorer  |     |
+| Gecko  | Firefox  |     |
+| [Webkit](https://github.com/WebKit/WebKit)  | Safari and Chrome 0-27  |     |
+| KHTML  |  KDE desktop environment. Webkit forked from KHTML some years ago |     |
+|  Elektra |  Opera 4-6 |     |
+|  Presto |  Opera 7-12  |     |
+| Blink  |  Chrome 28+, Opera 15+, webkit fork |     |
 
 ### Creating the Render Tree
 
@@ -167,28 +167,28 @@ A Javascript engine consists of a Lexer and a Parser.
 
 Several of these tend to be tied to a particular rendering engine.
 
-| Library  | Browser  |
-| - | - |
-| SpiderMonkey  | Gecko/Firefox  |
-| TraceMonkey  |  SpiderMonkey in Firefox 3.1 and introduces JIT (just-in-time) compilation |
-| KJS  | Konqueror, tied to KHTML  |
-|  JScript | Trident, Internet Explorer  |
-| JavascriptCore  | Webkit by the Safari browser  |
-| SquirrelFish  |  Webkit and adds JIT like TraceMonkey |
-| V8  | Google's Javascript engine used in Chrome and Opera  |
-|   |   |
+| Library  | Browser  | Language  |
+| - | - |  -   |
+| SpiderMonkey  | Gecko/Firefox  |     |
+| TraceMonkey  |  SpiderMonkey in Firefox 3.1 and introduces JIT (just-in-time) compilation |     |
+| KJS  | Konqueror, tied to KHTML  |     |
+|  JScript | Trident, Internet Explorer  |     |
+| JavascriptCore  | Webkit by the Safari browser  |     |
+| SquirrelFish  |  Webkit and adds JIT like TraceMonkey |     |
+| V8  | Google's Javascript engine used in Chrome and Opera  |     |
+|   |   |     |
 
 ## GUI Toolkit
 
 This is the module that draws the elements created by the rendering engine to the screen .
 
-| Library  | Browser  |
-| - | - |
-| wxWidgets  |   |
-| Qt  |   |
-| Tcl/Tk  |   |
-| GTK  |   |
-|   |   |
+| Library  | Browser  | Language  |
+| - | - |  -   |
+| wxWidgets  |   |     |
+| Qt  |   |     |
+| Tcl/Tk  |   |     |
+| GTK  |   |     |
+|   |   |     |
 
 ## User Interface
 
@@ -199,10 +199,10 @@ This module handles displaying the UI for operations such as:
 - Typing in a URL
 - Autocompleting URLs
 
-| Library  | Browser  |
-| - | - |
-| skia  | chrome  |
-|   |   |
+| Library  | Browser  | Language  |
+| - | - |   -  |
+| skia  | chrome  |     |
+|   |   |     |
 
 ## Web Browser Projects
 
