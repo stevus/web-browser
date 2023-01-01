@@ -2,8 +2,8 @@
 
 Initial discovery to answer questions like:
 
-- What is a Web browser? 
-- What does it do? 
+- How does it work?
+- What are the different modules?
 
 ![](./Image.png)
 
