@@ -35,10 +35,17 @@ The objective of this module is to output a DOM (Document Object Model) tree to 
 
 1. The HTML module of the Browser Engine receives a byte stream representing the web content
 1. A Lexer converts the bytes into a character stream and tokenizes it into the corresponding various HTML tags 
-1. A parser arranges the HTML tags into an Abstract Syntax Tree (DOM tree), where all conversions are well defined by the [HTML specification](https://html.spec.whatwg.org/multipage/)[^1]
+1. A Parser arranges the HTML tags into an Abstract Syntax Tree (DOM tree), where all conversions are well defined by the [HTML specification](https://html.spec.whatwg.org/multipage/)[^1]
 
 ![](./1_bL8cBbr37sv43WW3EfnOKA.webp)
 ![](./1_fraZ1zmnMWMYLhh8TmjlnQ.webp)
+
+It is stated above the the HTML module contains a Lexer and a Parser, and not a Tokenizer and a Parser because a Lexer performs operations that a Tokenizer does not, namely:
+- A Tokenizer breaks a stream of text into tokens, usually by looking for whitespace (angle brackets etc).
+- A Lexer is basically a tokenizer, but it usually attaches extra context to the tokens -- this token is a `<body>` tag, that token is a `<div>` tag, this other token is an `<img />` tag.
+
+Taking this to completion:
+- A Parser takes the stream of tokens from the lexer and turns it into an abstract syntax tree representing the (usually) program represented by the original text.[^2]
 
 Development considerations:
 - Must handle different content types based on MIME type
@@ -260,3 +267,4 @@ This module handles displaying the UI for operations such as:
 --
 
 [^1]: [Understanding DOM, CSSOM, Render Tree, Layout, and Painting](https://medium.com/weekly-webtips/understand-dom-cssom-render-tree-layout-and-painting-9f002f43d1aa)
+[^2]: [Looking for a clear definition of what a "tokenizer", "parser" and "lexers" are and how they are related to each other and used?](https://stackoverflow.com/questions/380455/looking-for-a-clear-definition-of-what-a-tokenizer-parser-and-lexers-are)
