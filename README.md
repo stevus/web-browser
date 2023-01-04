@@ -7,11 +7,8 @@ Initial discovery to answer questions like:
 
 ![](./Image.png)
 
-# Elements
 
-## Overview
-
-## Major Components
+# Overview
 
 ![](./Image_1.png)
 ![](./Image_2.png)
@@ -24,15 +21,27 @@ Initial discovery to answer questions like:
 
 - https://www.youtube.com/watch?v=xNu6U5XCMMQ&list=PLJbE2Yu2zumDD5vy2BuSHvFZU0a6RDmgb&index=14
 
-### Example Implementation
+## Example Implementation
 
 - https://github.com/tensor-programming/rust_browser_6_final
 
-## HTML / XML Lexer / Parser
+# Elements
+
+## Browser Engine - HTML module
 
 The objective of this module is to output a DOM (Document Object Model) tree to be consumed by the rendering engine.
 
-- Must be able to handle different content types based on MIME type.
+### Process
+
+1. The HTML module of the Browser Engine receives a byte stream representing the web content
+1. A Lexer converts the bytes into a character stream and tokenizes it into the corresponding various HTML tags 
+1. A parser arranges the HTML tags into an Abstract Syntax Tree (DOM tree), where all conversions are well defined by the [HTML specification](https://html.spec.whatwg.org/multipage/)[^1]
+
+![](./1_bL8cBbr37sv43WW3EfnOKA.webp)
+![](./1_fraZ1zmnMWMYLhh8TmjlnQ.webp)
+
+Development considerations:
+- Must handle different content types based on MIME type
 
 | Library  | Browser  |  Language  |    Stability  |
 | - | - |   -  | -  |
@@ -40,11 +49,8 @@ The objective of this module is to output a DOM (Document Object Model) tree to 
 | Lex  |   |     |     |
 | Yacc  |   |     |     |
 |  Bison |   |     |     |
+|  Expat |   |  Python   |     |
 |   |   |     |     |
-
-### Creating the DOM Tree
-
-TBD
 
 ### Links
 
@@ -55,19 +61,17 @@ TBD
 - https://www.youtube.com/watch?v=brhuVn91EdY
 - https://github.com/tensor-programming/rust_browser_part_1
 
-## CSS Lexer / Parser
+## Browser Engine - CSS Module
 
 The objective of this module is to output a Style tree to be consumed by the rendering engine.
+
+### Process
 
 - Handles all of the complexity of interpreting and understanding how the properties, units of measure, and the different ways values associated with the W3C visual model can be specified (eg "border: 1px solid black" vs the separate border-width, etc properties).
 
 | Library  | Browser  | Language  |    Stability  |
 | - | - |  -   | -  |
 |   |   |     |     |
-
-### Creating the Style Tree
-
-TBD
 
 ### Links
 
@@ -86,7 +90,7 @@ This module handles all of complexity / subtlety of the HTTP protocol eg data tr
 Url Request Methods
 Url Multi IO Threaded Request Methods for CSS, Images, Media and JS files, these have to be live to be fast and efficient.
 
-Other things to consider:
+Development considerations:
 - How many concurrent connections to use?
 - Error reporting to the user
 - Proxies
@@ -164,6 +168,8 @@ Combines the DOM Tree and Style Tree.
 ## Javascript Engine
 
 A Javascript engine consists of a Lexer and a Parser.
+
+This module is entirely separate from the Browser Engine.
 
 Several of these tend to be tied to a particular rendering engine.
 
@@ -250,3 +256,7 @@ This module handles displaying the UI for operations such as:
 
 - https://github.com/brave/adblock-rust
 - https://www.cs.ucr.edu/~zhiyunq/pub/pets17_anti_adblocker.pdf
+
+--
+
+[^1]: [Understanding DOM, CSSOM, Render Tree, Layout, and Painting](https://medium.com/weekly-webtips/understand-dom-cssom-render-tree-layout-and-painting-9f002f43d1aa)
