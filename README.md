@@ -238,6 +238,8 @@ This module handles displaying the UI for operations such as:
 - https://www.peteresnyder.com/static/papers/speedreader-www-2019.pdf
 - https://hacks.mozilla.org/2020/04/code-quality-tools-at-mozilla/
 - https://stackoverflow.com/questions/598841/how-to-get-started-building-a-web-browser
+- https://mhassan-work99.medium.com/understanding-dom-cssom-render-tree-795399cad299
+- https://medium.com/weekly-webtips/understand-dom-cssom-render-tree-layout-and-painting-9f002f43d1aa
 
 ## Libraries related to Web Browsers
 
