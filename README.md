@@ -1,9 +1,11 @@
 # Web Browser
 
-Initial discovery to answer questions like:
+Considerations:
 
-- How does it work?
-- What are the different modules?
+- Detailing all activities happening inside a web browser from URL entry to paint complete.
+- Identifying individual browser components
+- Estimating level of difficulty to building individual browser components
+- Browser completeness
 
 # Overview
 
@@ -277,6 +279,17 @@ This module handles displaying the UI for operations such as:
 | skia  | chrome  |     |     |
 |   |   |     |
 
+## On Analyzing Browser Builds
+
+It's necessary to determine a baseline test for all browsers to consume and grade on how close each come to rendering controlled layouts, and it's nice to know where the stopping point is.[^4]
+  
+- https://edwardtufte.github.io/tufte-css/
+  
+Grading will focus on:
+  
+- Visual accuracy
+- Time
+
 ## Web Browser Projects
 
 - https://joshondesign.com/tags/rust
@@ -326,3 +339,4 @@ This module handles displaying the UI for operations such as:
 [^1]: [Understanding DOM, CSSOM, Render Tree, Layout, and Painting](https://medium.com/weekly-webtips/understand-dom-cssom-render-tree-layout-and-painting-9f002f43d1aa)
 [^2]: [Looking for a clear definition of what a "tokenizer", "parser" and "lexers" are and how they are related to each other and used?](https://stackoverflow.com/questions/380455/looking-for-a-clear-definition-of-what-a-tokenizer-parser-and-lexers-are)
 [^3]: [Render-tree Construction, Layout, and Paint](https://web.dev/critical-rendering-path-render-tree-construction/)
+[^4]: [](https://joshondesign.com/2020/03/10/rust_minibrowser)
