@@ -1,0 +1,17 @@
+digraph G {
+    receive_html [label="Receive HTML\nByte Stream"]
+    build_dom_tree [label="Build DOM\ntree"]
+    build_cssom_tree [label="Build CSSOM\ntree"]
+    build_render_tree [label="Combine DOM & CSSOM\ninto Render Tree"]
+    create_layout [label="Create Layout"]
+    begin_paint [label="Begin Paint"]
+    
+    receive_html
+        -> {
+            build_dom_tree 
+            build_cssom_tree 
+        }
+        -> build_render_tree
+        -> create_layout
+        -> begin_paint 
+}
