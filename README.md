@@ -5,9 +5,6 @@ Initial discovery to answer questions like:
 - How does it work?
 - What are the different modules?
 
-![](./Image.png)
-
-
 # Overview
 
 ![](./Image_1.png)
@@ -21,6 +18,14 @@ Initial discovery to answer questions like:
 
 - https://www.youtube.com/watch?v=xNu6U5XCMMQ&list=PLJbE2Yu2zumDD5vy2BuSHvFZU0a6RDmgb&index=14
 
+## Overall Process
+
+![](./Image.png)
+Overly simplistic understanding of process
+
+![](./page-render-process.svg)
+My current understanding
+
 ## Example Implementation
 
 - https://github.com/tensor-programming/rust_browser_6_final
@@ -31,10 +36,25 @@ Initial discovery to answer questions like:
 
 The objective of this module is to output a DOM (Document Object Model) tree to be consumed by the rendering engine.
 
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Critical Path</title>
+  </head>
+  <body>
+    <p>Hello <span>web performance</span> students!</p>
+    <div><img src="awesome-photo.jpg" /></div>
+  </body>
+</html>
+```
+
 ### Process
 
-1. The HTML module of the Browser Engine receives a byte stream representing the web content
-1. A Lexer converts the bytes into a character stream and tokenizes it into the corresponding various HTML tags 
+1. The HTML module of the Browser Engine receives a byte stream representing HTML content
+1. A Lexer converts the bytes into a character stream and tokenizes it into the corresponding HTML tags 
 1. A Parser arranges the HTML tags into an Abstract Syntax Tree (DOM tree), where all conversions are well defined by the [HTML specification](https://html.spec.whatwg.org/multipage/)[^1]
 
 ![](./1_bL8cBbr37sv43WW3EfnOKA.webp)
@@ -67,15 +87,52 @@ Development considerations:
 - https://github.com/lexborisov/myhtml
 - https://www.youtube.com/watch?v=brhuVn91EdY
 - https://github.com/tensor-programming/rust_browser_part_1
+- https://blog.cloudflare.com/html-parsing-2/
+- https://medium.com/geekculture/should-html-parsing-in-browsers-be-standardized-50f5012ae9f7
 
 ## Browser Engine - CSS Module
 
-The objective of this module is to output a Style tree to be consumed by the rendering engine.
+The objective of this module is to output a CSSOM tree to be consumed by the rendering engine.
+
+```
+body {
+  font-size: 16px;
+}
+p {
+  font-weight: bold;
+}
+span {
+  color: red;
+}
+p span {
+  display: none;
+}
+img {
+  float: right;
+}
+```
 
 ### Process
 
-- Handles all of the complexity of interpreting and understanding how the properties, units of measure, and the different ways values associated with the W3C visual model can be specified (eg "border: 1px solid black" vs the separate border-width, etc properties).
+The CSSOM (CSS Object Model) tree is generated much like the DOM tree.
 
+1. The CSS module of the Browser Engine receives a byte stream representing CSS content from one of multiple inlets:
+    - A CSS byte stream originating from an external CSS stylesheet, referenced by a `<link>` tag, discovered by the HTML module while constructing the DOM tree
+    - An embedded stylesheet referenced inside a `<style>` tag, discovered by the HTML module while constructing the DOM tree
+    - An inline style belonging to an HTML node discovered by the HTML module while constructing the DOM tree
+1. A Lexer converts the bytes into a character stream and tokenizes it into the corresponding CSS rules 
+1. A Parser arranges each CSS rule into an Abstract Syntax Tree (CSSOM tree), where all conversions are well defined by the [CSS specification](https://www.w3.org/TR/css-syntax-3/)[^1]
+
+![](./yb5YfU0vx6vHvB7c0fyD.avif)
+
+The CSSOM has a tree structure because the browser starts with the most general rule applicable to a specific node (for example, if it is a child of a body element, then all body styles apply) and then recursively refines the computed styles by applying more specific rules; that is, CSS rules "cascade down.
+
+![](./keK3wDv9k2KzJA9QubFx.avif)
+
+To make it more concrete, consider the CSSOM tree above. Any text contained within the <span> tag that is placed within the body element, has a font size of 16 pixels and has red text—the font-size directive cascades down from the body to the span. However, if a span tag is child of a paragraph (p) tag, then its contents are not displayed.
+
+Also, note that the above tree is not the complete CSSOM tree and only shows the styles we decided to override in our stylesheet. Every browser provides a default set of styles also known as "user agent styles"—that’s what we see when we don’t provide any of our own—and our styles simply override these defaults.[^3] 
+  
 | Library  | Browser  | Language  |    Stability  |
 | - | - |  -   | -  |
 |   |   |     |     |
@@ -138,7 +195,7 @@ A Pic of Chrome beside Tk testing HTML Cell Rendering to adjust border and spaci
 
 It does require math within the Cell Methods also. 
 
-CSS can be transferred without allot of Tokenizing simply by assigning the CSS value directly to the widgets value variables. Such as background=background-color etc. 
+CSS can be transferred without allot of Tokenizing simply by assigning the CSS value directly to the widgets value variables. Such as background=background-color etc. CSS is render-blocking. That means the browser blocks page rendering until receive and process all CSS of the page. The reason why it happens is that CSS overrides it, so if you, for example, will allow partial rendering, with partial CSS, you will end up with an inconsistent state of the view until finish to process all CSS of the page.
 
 Width and height have to be carried and returned for each new widtget combo in the stack also.
 
@@ -268,3 +325,4 @@ This module handles displaying the UI for operations such as:
 
 [^1]: [Understanding DOM, CSSOM, Render Tree, Layout, and Painting](https://medium.com/weekly-webtips/understand-dom-cssom-render-tree-layout-and-painting-9f002f43d1aa)
 [^2]: [Looking for a clear definition of what a "tokenizer", "parser" and "lexers" are and how they are related to each other and used?](https://stackoverflow.com/questions/380455/looking-for-a-clear-definition-of-what-a-tokenizer-parser-and-lexers-are)
+[^3]: [Render-tree Construction, Layout, and Paint](https://web.dev/critical-rendering-path-render-tree-construction/)
