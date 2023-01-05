@@ -51,7 +51,7 @@ The objective of this module is to output a DOM (Document Object Model) tree to 
 </html>
 ```
 
-### Process
+### Creating the DOM Tree
 
 1. The HTML module of the Browser Engine receives a byte stream representing HTML content
 1. A Lexer converts the bytes into a character stream and tokenizes it into the corresponding HTML tags 
@@ -112,7 +112,7 @@ img {
 }
 ```
 
-### Process
+### Creating the CSSOM Tree
 
 The CSSOM (CSS Object Model) tree is generated much like the DOM tree.
 
@@ -213,7 +213,7 @@ Nothing will fully match between Webkit, Firefox and Edge spacing because of NCS
 
 ### Creating the Render Tree
 
-Combines the DOM Tree and Style Tree.
+- Combine the DOM Tree and CSSOM Tree.
 
 ### Links
 
