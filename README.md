@@ -291,18 +291,55 @@ Grading will focus on:
 - Time
 
 ## Web Browser Projects
+  
+**Tensor Programming - Rust Browser**
+> :pencil: Custom Design
+- [Part 1 - Dom and HTML Parser](https://github.com/tensor-programming/rust_browser_part_1)
+- [Part 2 - CSS Engine and CSS Parser](https://github.com/tensor-programming/rust_browser_part_2)
+- [Part 3 - Style Tree](https://github.com/tensor-programming/rust_browser_part_3)
+- [Part 4 - Layout Tree](https://github.com/tensor-programming/rust_browser_part_4)
+- [Part 5 - Command Module and Rendering Engine](https://github.com/tensor-programming/rust_browser_part_5)
+- [Part 6 - Completing Browser Engine](https://github.com/tensor-programming/rust_browser_6_final)
+  
+**Josh on Design - Rust Browser**
+> :pencil: Custom Design
+- [GitHub](https://github.com/joshmarinacci/rust-minibrowser)
+- [Part 1 - Building a Web Browser](https://joshondesign.com/2020/03/10/rust_minibrowser)
+- [Part 2 - Parsers](https://joshondesign.com/2020/03/14/rust_browser_parser)
+- [Part 3 - A Long Slog for Small Features](https://joshondesign.com/2020/03/21/browser_long_slog)
+- [Part 4 - Type Madness](https://joshondesign.com/2020/03/24/type_madness)
+- [Part 5 - A Proper Tree Structure](https://joshondesign.com/2020/04/08/rust5_tree)
+- [Part 6 - Layout](https://joshondesign.com/2020/04/11/rust_layout)
+- [Part 7 - Rendering](https://joshondesign.com/2020/04/13/browser_render)
+- [Part 8 - Next Steps](https://joshondesign.com/2020/04/15/next-steps)
+    
+**A Toy Rendering Engine**
+> :pencil: Custom Design
+- [GitHub](https://github.com/mbrubeck/robinson)
+- [Part 1 - Getting Started](https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html)
+- [Part 2 - HTML](https://limpet.net/mbrubeck/2014/08/11/toy-layout-engine-2.html)
+- [Part 3 - CSS](https://limpet.net/mbrubeck/2014/08/13/toy-layout-engine-3-css.html)
+- [Part 4 - Style](https://limpet.net/mbrubeck/2014/08/23/toy-layout-engine-4-style.html)
+- [Part 5 - Boxes](https://limpet.net/mbrubeck/2014/09/08/toy-layout-engine-5-boxes.html)
+- [Part 6 - Block Layout](https://limpet.net/mbrubeck/2014/09/17/toy-layout-engine-6-block.html)
+- [Part 7 - Painting 101](https://limpet.net/mbrubeck/2014/11/05/toy-layout-engine-7-painting.html)
+  
+**EinkBro**
+- [GitHub](https://github.com/plateaukao/einkbro)
+  
+**Kosmonaut**
+- [GitHub](https://github.com/twilco/kosmonaut)
+  
+**Polypane**
+> :pencil: Uses Electron WebView
+- [How I built my own browser](https://kilianvalkhof.com/2020/design/how-i-built-my-own-browser/)
+- [Interview with Creator of Polypane, a Powerful Browser for Developers](https://www.infoq.com/articles/polypane-developer-browser-interview/)
+    - [On Hacker News](https://news.ycombinator.com/item?id=19553941)
 
-- https://joshondesign.com/tags/rust
-- https://github.com/tensor-programming/
-  - https://github.com/tensor-programming/rust_browser_6_final
-- https://github.com/joshmarinacci/rust-minibrowser
-- https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html
-  - https://github.com/mbrubeck/robinson
-- https://github.com/plateaukao/einkbro
-- https://github.com/twilco/kosmonaut
-- https://news.ycombinator.com/item?id=19553941
-- https://kilianvalkhof.com/2020/design/how-i-built-my-own-browser/
-- https://www.infoq.com/articles/polypane-developer-browser-interview/
+**Metastream**
+- [GitHub](https://github.com/samuelmaddock/metastream)
+- [Website](https://getmetastream.com/)
+- [I tried creating a web browser, and Google blocked me](https://blog.samuelmaddock.com/posts/google-widevine-blocked-my-browser/)
 
 ## Open Source Web Browsers
 
@@ -325,6 +362,9 @@ Grading will focus on:
 - https://hacks.mozilla.org/2020/04/code-quality-tools-at-mozilla/
 - https://stackoverflow.com/questions/598841/how-to-get-started-building-a-web-browser
 - https://mhassan-work99.medium.com/understanding-dom-cssom-render-tree-795399cad299
+- https://medium.com/weekly-webtips/understand-dom-cssom-render-tree-layout-and-painting-9f002f43d1aa
+- https://stackoverflow.com/questions/380455/looking-for-a-clear-definition-of-what-a-tokenizer-parser-and-lexers-are
+- https://web.dev/critical-rendering-path-render-tree-construction/
 
 ## Libraries related to Web Browsers
 
@@ -339,4 +379,4 @@ Grading will focus on:
 [^1]: [Understanding DOM, CSSOM, Render Tree, Layout, and Painting](https://medium.com/weekly-webtips/understand-dom-cssom-render-tree-layout-and-painting-9f002f43d1aa)
 [^2]: [Looking for a clear definition of what a "tokenizer", "parser" and "lexers" are and how they are related to each other and used?](https://stackoverflow.com/questions/380455/looking-for-a-clear-definition-of-what-a-tokenizer-parser-and-lexers-are)
 [^3]: [Render-tree Construction, Layout, and Paint](https://web.dev/critical-rendering-path-render-tree-construction/)
-[^4]: [](https://joshondesign.com/2020/03/10/rust_minibrowser)
+[^4]: [Josh on Design: Building a Rust Web Browser](https://joshondesign.com/2020/03/10/rust_minibrowser)
