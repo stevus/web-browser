@@ -171,6 +171,9 @@ This module handles how to interpret the parsed HTML and creating a plan to disp
 
 A Regular Expression Engine to pre find all required HTML, CSS, JS objects and methods and counts to pre set the rendering engine before the rendering loop begins.
 
+![](./1_-ffAB0BPwrt-AQHIea4kWQ.webp)
+![](./1_OLC_4tYWtsAAsBpyq_WUnA.webp)
+  
 Things like the id, tags with their widets and CSS Nested Rules need to be combined in each render loop, with some examples below:
 - A set of both Horizontal and Vertical that will handle the Cells below as box Frames for div 1 sections→
 - A Canvas or Frame that allows painting or drawing widgets and shapes as box Frames for div 1 to div 6 sections→
@@ -309,7 +312,6 @@ This module handles displaying the UI for operations such as:
 - https://hacks.mozilla.org/2020/04/code-quality-tools-at-mozilla/
 - https://stackoverflow.com/questions/598841/how-to-get-started-building-a-web-browser
 - https://mhassan-work99.medium.com/understanding-dom-cssom-render-tree-795399cad299
-- https://medium.com/weekly-webtips/understand-dom-cssom-render-tree-layout-and-painting-9f002f43d1aa
 
 ## Libraries related to Web Browsers
 
@@ -320,8 +322,6 @@ This module handles displaying the UI for operations such as:
 
 - https://github.com/brave/adblock-rust
 - https://www.cs.ucr.edu/~zhiyunq/pub/pets17_anti_adblocker.pdf
-
---
 
 [^1]: [Understanding DOM, CSSOM, Render Tree, Layout, and Painting](https://medium.com/weekly-webtips/understand-dom-cssom-render-tree-layout-and-painting-9f002f43d1aa)
 [^2]: [Looking for a clear definition of what a "tokenizer", "parser" and "lexers" are and how they are related to each other and used?](https://stackoverflow.com/questions/380455/looking-for-a-clear-definition-of-what-a-tokenizer-parser-and-lexers-are)
