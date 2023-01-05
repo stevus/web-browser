@@ -56,8 +56,9 @@ The objective of this module is to output a DOM (Document Object Model) tree to 
 ### Creating the DOM Tree
 
 1. The HTML module of the Browser Engine receives a byte stream representing HTML content
-1. A Lexer converts the bytes into a character stream and tokenizes it into the corresponding HTML tags 
-1. A Parser arranges the HTML tags into an Abstract Syntax Tree (DOM tree), where all conversions are well defined by the [HTML specification](https://html.spec.whatwg.org/multipage/)[^1]
+2. The byte stream is converted to characters
+3. A Lexer tokenizes the character stream, turning it into the corresponding HTML tags 
+4. A Parser arranges the HTML tags into an Abstract Syntax Tree (DOM tree), where all conversions are well defined by the [HTML specification](https://html.spec.whatwg.org/multipage/)[^1]
 
 ![](./1_bL8cBbr37sv43WW3EfnOKA.webp)
 ![](./1_fraZ1zmnMWMYLhh8TmjlnQ.webp)
@@ -122,8 +123,9 @@ The CSSOM (CSS Object Model) tree is generated much like the DOM tree.
     - A CSS byte stream originating from an external CSS stylesheet, referenced by a `<link>` tag, discovered by the HTML module while constructing the DOM tree
     - An embedded stylesheet referenced inside a `<style>` tag, discovered by the HTML module while constructing the DOM tree
     - An inline style belonging to an HTML node discovered by the HTML module while constructing the DOM tree
-1. A Lexer converts the bytes into a character stream and tokenizes it into the corresponding CSS rules 
-1. A Parser arranges each CSS rule into an Abstract Syntax Tree (CSSOM tree), where all conversions are well defined by the [CSS specification](https://www.w3.org/TR/css-syntax-3/)[^1]
+2. The byte stream is converted to characters
+3. A Lexer tokenizes the character stream, turning it into the corresponding CSS rules 
+4. A Parser arranges each CSS rule into an Abstract Syntax Tree (CSSOM tree), where all conversions are well defined by the [CSS specification](https://www.w3.org/TR/css-syntax-3/)[^1]
 
 ![](./yb5YfU0vx6vHvB7c0fyD.avif)
 
