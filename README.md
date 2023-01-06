@@ -163,6 +163,12 @@ This module handles how to interpret the parsed HTML and creating a plan to disp
 |  Elektra |  Opera 4-6 |     |     |
 |  Presto |  Opera 7-12  |     |     |
 | Blink  |  Chrome 28+, Opera 15+, webkit fork |     |     |
+  
+### Creating the Render Tree
+
+- Combine the DOM Tree and CSSOM Tree.
+  
+### Additional Information
 
 A Regular Expression Engine to pre find all required HTML, CSS, JS objects and methods and counts to pre set the rendering engine before the rendering loop begins.
 
@@ -198,10 +204,6 @@ CSS can be transferred without allot of Tokenizing simply by assigning the CSS v
 Width and height have to be carried and returned for each new widtget combo in the stack also.
 
 Nothing will fully match between Webkit, Firefox and Edge spacing because of NCSA Mosaic Widgets and they also do not fully match in many ways because of differences between Spyglass and Netscape Navigator’s having a different CSS Engine while both were developed by both Sun Micro Systems and Microsoft to render CSS differently.
-
-### Creating the Render Tree
-
-- Combine the DOM Tree and CSSOM Tree.
 
 ### Links
 
