@@ -15,19 +15,16 @@ Considerations:
 - https://browser.engineering/
 - https://www.youtube.com/watch?v=xNu6U5XCMMQ&list=PLJbE2Yu2zumDD5vy2BuSHvFZU0a6RDmgb&index=14
 
-<p>
-  <img src="./Image_1.png" style="width:250px">
-  <img src="./Image_2.png" style="width:250px">
-  <img src="./Image_3.png" style="width:250px">
-</p>
+
+| ![alt](./Image_1.png) |  ![alt](./Image_2.png) |  ![alt](./Image_3.png) | 
+|:--:| :--:| :--:| 
+| *Caption* | *Caption* | *Caption* |
 
 ## Overall Process
 
-![](./Image.png)
-Overly simplistic understanding of process
-
-![](./page-render-process.svg)
-My current understanding
+| ![alt](./Image.png) |  ![alt](./page-render-process.svg) | 
+|:--:| :--:| 
+| *Generalized understanding of process (web)* | *My current understanding* |
 
 ## Example Implementation
 
