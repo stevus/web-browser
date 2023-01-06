@@ -9,16 +9,17 @@ Considerations:
 
 # Overview
 
-![](./Image_1.png)
-![](./Image_2.png)
-![](./Image_3.png)
-
 - https://joshondesign.com/2020/03/10/rust_minibrowser
 - https://joshondesign.com/2020/04/15/next-steps
 - https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html
 - https://browser.engineering/
-
 - https://www.youtube.com/watch?v=xNu6U5XCMMQ&list=PLJbE2Yu2zumDD5vy2BuSHvFZU0a6RDmgb&index=14
+
+<p>
+  <img src="./Image_1.png" style="width:250px">
+  <img src="./Image_2.png" style="width:250px">
+  <img src="./Image_3.png" style="width:250px">
+</p>
 
 ## Overall Process
 
