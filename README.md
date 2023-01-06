@@ -15,7 +15,6 @@ Considerations:
 - https://browser.engineering/
 - https://www.youtube.com/watch?v=xNu6U5XCMMQ&list=PLJbE2Yu2zumDD5vy2BuSHvFZU0a6RDmgb&index=14
 
-
 | ![alt](./Image_1.png) |  ![alt](./Image_2.png) |  ![alt](./Image_3.png) | 
 |:--:| :--:| :--:| 
 | *Caption* | *Caption* | *Caption* |
@@ -45,6 +44,9 @@ The objective of this module is to output a DOM (Document Object Model) tree to 
 |  Expat |   |  Python   |     |
 |   |   |     |     |
 
+Development considerations:
+- Must handle different content types based on MIME type
+
 ### Creating the DOM Tree
 
 ```
@@ -62,10 +64,10 @@ The objective of this module is to output a DOM (Document Object Model) tree to 
 </html>
 ```
 
-1. The HTML module of the Browser Engine receives a byte stream representing HTML content
-2. The byte stream is converted to characters
-3. A Lexer tokenizes the character stream, turning it into the corresponding HTML tags 
-4. A Parser arranges the HTML tags into an Abstract Syntax Tree (DOM tree), where all conversions are well defined by the [HTML specification](https://html.spec.whatwg.org/multipage/)[^1]
+1. The HTML module of the Browser Engine receives an input byte stream representing HTML content
+3. A Lexer tokenizes the input byte stream and converts it into equivalent HTML nodes
+4. A Parser arranges the HTML nodes into an Abstract Syntax Tree (DOM tree)
+    - The Parser interprets all HTML nodes using rules defined in the [HTML specification](https://html.spec.whatwg.org/multipage/)[^1].
 
 ![](./1_bL8cBbr37sv43WW3EfnOKA.webp)
 ![](./1_fraZ1zmnMWMYLhh8TmjlnQ.webp)
@@ -77,8 +79,7 @@ It is stated above the the HTML module contains a Lexer and a Parser, and not a 
 Taking this to completion:
 - A Parser takes the stream of tokens from the lexer and turns it into an abstract syntax tree representing the (usually) program represented by the original text.[^2]
 
-Development considerations:
-- Must handle different content types based on MIME type
+Implementations exist that combine the processes of Lexing and Parsing and call the module a Parser[^5] when in reality two separate operations are occuring on the input byte stream.
 
 ### Links
 
@@ -121,13 +122,13 @@ img {
 
 The CSSOM (CSS Object Model) tree is generated much like the DOM tree.
 
-1. The CSS module of the Browser Engine receives a byte stream representing CSS content from one of multiple inlets:
-    - A CSS byte stream originating from an external CSS stylesheet, referenced by a `<link>` tag, discovered by the HTML module while constructing the DOM tree
+1. The CSS module of the Browser Engine receives an input byte stream representing CSS content from one of multiple inlets:
+    - An input byte stream originating from an external CSS stylesheet, referenced by a `<link>` tag, discovered by the HTML module while constructing the DOM tree
     - An embedded stylesheet referenced inside a `<style>` tag, discovered by the HTML module while constructing the DOM tree
     - An inline style belonging to an HTML node discovered by the HTML module while constructing the DOM tree
-2. The byte stream is converted to characters
-3. A Lexer tokenizes the character stream, turning it into the corresponding CSS rules 
-4. A Parser arranges each CSS rule into an Abstract Syntax Tree (CSSOM tree), where all conversions are well defined by the [CSS specification](https://www.w3.org/TR/css-syntax-3/)[^1]
+3. A Lexer tokenizes the input byte stream, turning it into the corresponding CSS rules 
+4. A Parser arranges each CSS selector into an Abstract Syntax Tree (CSSOM tree)
+    - The Parser interprets all CSS selectors using rules defined in the [CSS specification](https://www.w3.org/TR/css-syntax-3/)[^1]
 
 ![](./yb5YfU0vx6vHvB7c0fyD.avif)
 
@@ -380,3 +381,4 @@ Grading will focus on:
 [^2]: [Looking for a clear definition of what a "tokenizer", "parser" and "lexers" are and how they are related to each other and used?](https://stackoverflow.com/questions/380455/looking-for-a-clear-definition-of-what-a-tokenizer-parser-and-lexers-are)
 [^3]: [Render-tree Construction, Layout, and Paint](https://web.dev/critical-rendering-path-render-tree-construction/)
 [^4]: [Josh on Design: Building a Rust Web Browser](https://joshondesign.com/2020/03/10/rust_minibrowser)
+[^5]: [Constructing a Document Tree](https://browser.engineering/html.html)
