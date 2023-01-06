@@ -36,6 +36,17 @@ Considerations:
 
 The objective of this module is to output a DOM (Document Object Model) tree to be consumed by the rendering engine.
 
+| Library  | Browser  |  Language  |    Stability  |
+| - | - |   -  | -  |
+| Flex  |   |     |     |
+| Lex  |   |     |     |
+| Yacc  |   |     |     |
+|  Bison |   |     |     |
+|  Expat |   |  Python   |     |
+|   |   |     |     |
+
+### Creating the DOM Tree
+
 ```
 <!DOCTYPE html>
 <html>
@@ -50,8 +61,6 @@ The objective of this module is to output a DOM (Document Object Model) tree to 
   </body>
 </html>
 ```
-
-### Creating the DOM Tree
 
 1. The HTML module of the Browser Engine receives a byte stream representing HTML content
 2. The byte stream is converted to characters
@@ -71,15 +80,6 @@ Taking this to completion:
 Development considerations:
 - Must handle different content types based on MIME type
 
-| Library  | Browser  |  Language  |    Stability  |
-| - | - |   -  | -  |
-| Flex  |   |     |     |
-| Lex  |   |     |     |
-| Yacc  |   |     |     |
-|  Bison |   |     |     |
-|  Expat |   |  Python   |     |
-|   |   |     |     |
-
 ### Links
 
 - https://joshondesign.com/2020/03/14/rust_browser_parser 
@@ -94,6 +94,12 @@ Development considerations:
 ## Browser Engine - CSS Module
 
 The objective of this module is to output a CSSOM tree to be consumed by the rendering engine.
+
+| Library  | Browser  | Language  |    Stability  |
+| - | - |  -   | -  |
+|   |   |     |     |
+
+### Creating the CSSOM Tree
 
 ```
 body {
@@ -112,8 +118,6 @@ img {
   float: right;
 }
 ```
-
-### Creating the CSSOM Tree
 
 The CSSOM (CSS Object Model) tree is generated much like the DOM tree.
 
@@ -134,10 +138,6 @@ The CSSOM has a tree structure because the browser starts with the most general 
 To make it more concrete, consider the CSSOM tree above. Any text contained within the <span> tag that is placed within the body element, has a font size of 16 pixels and has red text—the font-size directive cascades down from the body to the span. However, if a span tag is child of a paragraph (p) tag, then its contents are not displayed.
 
 Also, note that the above tree is not the complete CSSOM tree and only shows the styles we decided to override in our stylesheet. Every browser provides a default set of styles also known as "user agent styles"—that’s what we see when we don’t provide any of our own—and our styles simply override these defaults.[^3] 
-  
-| Library  | Browser  | Language  |    Stability  |
-| - | - |  -   | -  |
-|   |   |     |     |
 
 ### Links
 
@@ -152,6 +152,11 @@ Also, note that the above tree is not the complete CSSOM tree and only shows the
 ## Networking
 
 This module handles all of complexity / subtlety of the HTTP protocol eg data transfer, expires headers, different versions, TLS etc.
+  
+| Library  | Browser  | Language  |    Stability  |
+| - | - |  -   | -  |
+| Necko  | Firefox  |     |     |
+|   |   |     |     |
 
 Url Request Methods
 Url Multi IO Threaded Request Methods for CSS, Images, Media and JS files, these have to be live to be fast and efficient.
@@ -162,14 +167,19 @@ Development considerations:
 - Proxies
 - User options
 
-| Library  | Browser  | Language  |    Stability  |
-| - | - |  -   | -  |
-| Necko  | Firefox  |     |     |
-|   |   |     |     |
-
 ## Rendering Engine
 
 This module handles how to interpret the parsed HTML and creating a plan to displaying it on the screen. Man years have gone into development of different versions of this module.
+
+| Library  | Browser  | Language  |    Stability  |
+| - | - |  -   | -  |
+| Trident  | Internet Explorer  |     |     |
+| Gecko  | Firefox  |     |     |
+| [Webkit](https://github.com/WebKit/WebKit)  | Safari and Chrome 0-27  |     |     |
+| KHTML  |  KDE desktop environment. Webkit forked from KHTML some years ago |     |     |
+|  Elektra |  Opera 4-6 |     |     |
+|  Presto |  Opera 7-12  |     |     |
+| Blink  |  Chrome 28+, Opera 15+, webkit fork |     |     |
 
 A Regular Expression Engine to pre find all required HTML, CSS, JS objects and methods and counts to pre set the rendering engine before the rendering loop begins.
 
@@ -206,16 +216,6 @@ Width and height have to be carried and returned for each new widtget combo in t
 
 Nothing will fully match between Webkit, Firefox and Edge spacing because of NCSA Mosaic Widgets and they also do not fully match in many ways because of differences between Spyglass and Netscape Navigator’s having a different CSS Engine while both were developed by both Sun Micro Systems and Microsoft to render CSS differently.
 
-| Library  | Browser  | Language  |    Stability  |
-| - | - |  -   | -  |
-| Trident  | Internet Explorer  |     |     |
-| Gecko  | Firefox  |     |     |
-| [Webkit](https://github.com/WebKit/WebKit)  | Safari and Chrome 0-27  |     |     |
-| KHTML  |  KDE desktop environment. Webkit forked from KHTML some years ago |     |     |
-|  Elektra |  Opera 4-6 |     |     |
-|  Presto |  Opera 7-12  |     |     |
-| Blink  |  Chrome 28+, Opera 15+, webkit fork |     |     |
-
 ### Creating the Render Tree
 
 - Combine the DOM Tree and CSSOM Tree.
@@ -235,13 +235,7 @@ Nothing will fully match between Webkit, Firefox and Edge spacing because of NCS
 - https://github.com/tensor-programming/rust_browser_part_5
 
 ## Javascript Engine
-
-A Javascript engine consists of a Lexer and a Parser.
-
-This module is entirely separate from the Browser Engine.
-
-Several of these tend to be tied to a particular rendering engine.
-
+  
 | Library  | Browser  | Language  |    Stability  |
 | - | - |  -   | -  |
 | SpiderMonkey  | Gecko/Firefox  |     |     |
@@ -252,6 +246,12 @@ Several of these tend to be tied to a particular rendering engine.
 | SquirrelFish  |  Webkit and adds JIT like TraceMonkey |     |     |
 | V8  | Google's Javascript engine used in Chrome and Opera  |     |     |
 |   |   |     |     |
+
+A Javascript engine consists of a Lexer and a Parser.
+
+This module is entirely separate from the Browser Engine.
+
+Several of these tend to be tied to a particular rendering engine.
 
 ## GUI Toolkit
 
