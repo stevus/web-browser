@@ -150,24 +150,6 @@ Also, note that the above tree is not the complete CSSOM tree and only shows the
 - https://github.com/tensor-programming/rust_browser_part_2
 - https://github.com/tensor-programming/rust_browser_part_3
 
-## Networking
-
-This module handles all of complexity / subtlety of the HTTP protocol eg data transfer, expires headers, different versions, TLS etc.
-  
-| Library  | Browser  | Language  |    Stability  |
-| - | - |  -   | -  |
-| Necko  | Firefox  |     |     |
-|   |   |     |     |
-
-Url Request Methods
-Url Multi IO Threaded Request Methods for CSS, Images, Media and JS files, these have to be live to be fast and efficient.
-
-Development considerations:
-- How many concurrent connections to use?
-- Error reporting to the user
-- Proxies
-- User options
-
 ## Rendering Engine
 
 This module handles how to interpret the parsed HTML and creating a plan to displaying it on the screen. Man years have gone into development of different versions of this module.
@@ -279,6 +261,24 @@ This module handles displaying the UI for operations such as:
 | - | - |   -  | -  |
 | skia  | chrome  |     |     |
 |   |   |     |
+  
+## Networking
+
+This module handles all of complexity / subtlety of the HTTP protocol eg data transfer, expires headers, different versions, TLS etc.
+  
+| Library  | Browser  | Language  |    Stability  |
+| - | - |  -   | -  |
+| Necko  | Firefox  |     |     |
+|   |   |     |     |
+
+Url Request Methods
+Url Multi IO Threaded Request Methods for CSS, Images, Media and JS files, these have to be live to be fast and efficient.
+
+Development considerations:
+- How many concurrent connections to use?
+- Error reporting to the user
+- Proxies
+- User options
 
 ## On Analyzing Browser Builds
 
