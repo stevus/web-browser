@@ -284,11 +284,11 @@ Development considerations:
 
 ## On Analyzing Browser Builds
 
-It's necessary to determine a baseline test for all browsers to consume and grade on how close each come to rendering controlled layouts, and it's nice to know where the stopping point is.[^4]
+It's necessary to determine a baseline test for all browsers to consume and assess how close each come to rendering controlled layouts, and it's nice to know where the stopping point is.[^4]
   
 - https://edwardtufte.github.io/tufte-css/
   
-Grading will focus on:
+Assessment will focus on:
   
 - Visual accuracy
 - Time
