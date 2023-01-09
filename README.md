@@ -193,6 +193,8 @@ This module handles how to interpret the parsed HTML and creating a plan to disp
 The Render Tree maintains the knowledge of which nodes are rendered onto the page and where they are located and how they are should appear according to constraints such as screen size and user interaction.
 
 - Combine the DOM Tree and CSSOM Tree.
+
+![](./JFSvQmJ5p.avif)
   
 ### Additional Information
 
