@@ -19,6 +19,8 @@ Considerations:
 |:--:| :--:| :--:| 
 | *Caption* | *Caption* | *Caption* |
 
+Complexity of modules is represented in the amount of :computer:
+
 ## Overall Process
 
 | ![alt](./Image.png) |  ![alt](./page-render-process.svg) | 
@@ -35,6 +37,8 @@ Considerations:
 
 The objective of this module is to output a DOM (Document Object Model) tree to be consumed by the rendering engine.
 
+> :computer: :computer: :computer:
+
 | Library  | Browser  |  Language  |    Stability  |
 | - | - |   -  | -  |
 | Flex  |   |     |     |
@@ -48,6 +52,8 @@ Development considerations:
 - Must handle different content types based on MIME type
 
 ### Creating the DOM Tree
+
+DOM tree maintains the hierarchy of all the HTML nodes (visual and nonvisual) on the page.
 
 ```
 <!DOCTYPE html>
@@ -81,6 +87,9 @@ Taking this to completion:
 
 Implementations exist that combine the processes of Lexing and Parsing and call the module a Parser[^5] when in reality two separate operations are occuring on the input byte stream.
 
+The DOM tree changes when:
+- A piece of Javascript has triggered created, removed or modified existing HTML nodes on the page.
+
 ### Links
 
 - https://joshondesign.com/2020/03/14/rust_browser_parser 
@@ -94,13 +103,17 @@ Implementations exist that combine the processes of Lexing and Parsing and call 
 
 ## Browser Engine - CSS Module
 
-The objective of this module is to output a CSSOM tree to be consumed by the rendering engine.
+> :computer: :computer:
+
+The objective of this module is to output a CSSOM (Cascading Style Sheet Object Model) tree to be consumed by the rendering engine.
 
 | Library  | Browser  | Language  |    Stability  |
 | - | - |  -   | -  |
 |   |   |     |     |
 
 ### Creating the CSSOM Tree
+
+The CSSOM tree maintaings the knowledge of all styles of the DOM tree so long as a rule has been specified in external, inline or embedded CSS.
 
 ```
 body {
@@ -140,6 +153,13 @@ To make it more concrete, consider the CSSOM tree above. Any text contained with
 
 Also, note that the above tree is not the complete CSSOM tree and only shows the styles we decided to override in our stylesheet. Every browser provides a default set of styles also known as "user agent styles"—that’s what we see when we don’t provide any of our own—and our styles simply override these defaults.[^3] 
 
+### Changes in the CSSOM tree
+
+The CSSOM tree changes when:
+- A piece of Javascript has triggered a change in the DOM or modified CSS on one more nodes of HTML on the page.
+
+Question: How are media queries represented in the CSSOM tree?
+
 ### Links
 
 - https://limpet.net/mbrubeck/2014/08/13/toy-layout-engine-3-css.html
@@ -152,7 +172,11 @@ Also, note that the above tree is not the complete CSSOM tree and only shows the
 
 ## Rendering Engine
 
+> :computer: :computer: :computer: :computer: :computer:
+
 This module handles how to interpret the parsed HTML and creating a plan to displaying it on the screen. Man years have gone into development of different versions of this module.
+
+> :triangular_flag_on_post: There is not a lot of community exploration and research on this subject which leads me to believe it is heavily misunderstood.
 
 | Library  | Browser  | Language  |    Stability  |
 | - | - |  -   | -  |
@@ -163,8 +187,10 @@ This module handles how to interpret the parsed HTML and creating a plan to disp
 |  Elektra |  Opera 4-6 |     |     |
 |  Presto |  Opera 7-12  |     |     |
 | Blink  |  Chrome 28+, Opera 15+, webkit fork |     |     |
-  
+
 ### Creating the Render Tree
+
+The Render Tree maintains the knowledge of which nodes are rendered onto the page and where they are located and how they are should appear according to constraints such as screen size and user interaction.
 
 - Combine the DOM Tree and CSSOM Tree.
   
@@ -220,6 +246,8 @@ Nothing will fully match between Webkit, Firefox and Edge spacing because of NCS
 - https://github.com/tensor-programming/rust_browser_part_5
 
 ## Javascript Engine
+
+> :computer: :computer: :computer: :computer: :computer:
   
 | Library  | Browser  | Language  |    Stability  |
 | - | - |  -   | -  |
@@ -266,6 +294,8 @@ This module handles displaying the UI for operations such as:
   
 ## Networking
 
+> :computer: :computer: 
+
 This module handles all of complexity / subtlety of the HTTP protocol eg data transfer, expires headers, different versions, TLS etc.
   
 | Library  | Browser  | Language  |    Stability  |
@@ -282,6 +312,15 @@ Development considerations:
 - Proxies
 - User options
 
+## Database
+
+Stores things relevant to the browser such as:
+
+- Cookies
+- Cache
+- Security Certificates
+- Bookmarks
+
 ## On Analyzing Browser Builds
 
 It's necessary to determine a baseline test for all browsers to consume and assess how close each come to rendering controlled layouts, and it's nice to know where the stopping point is.[^4]
@@ -296,7 +335,7 @@ Assessment will focus on:
 ## Web Browser Projects
   
 **Tensor Programming - Rust Browser**
-> :pencil: Custom Design
+> :white_check_mark: Custom Design
 - [Part 1 - Dom and HTML Parser](https://github.com/tensor-programming/rust_browser_part_1)
 - [Part 2 - CSS Engine and CSS Parser](https://github.com/tensor-programming/rust_browser_part_2)
 - [Part 3 - Style Tree](https://github.com/tensor-programming/rust_browser_part_3)
@@ -305,7 +344,7 @@ Assessment will focus on:
 - [Part 6 - Completing Browser Engine](https://github.com/tensor-programming/rust_browser_6_final)
   
 **Josh on Design - Rust Browser**
-> :pencil: Custom Design
+> :white_check_mark: Custom Design
 - [GitHub](https://github.com/joshmarinacci/rust-minibrowser)
 - [Part 1 - Building a Web Browser](https://joshondesign.com/2020/03/10/rust_minibrowser)
 - [Part 2 - Parsers](https://joshondesign.com/2020/03/14/rust_browser_parser)
@@ -317,7 +356,7 @@ Assessment will focus on:
 - [Part 8 - Next Steps](https://joshondesign.com/2020/04/15/next-steps)
     
 **A Toy Rendering Engine**
-> :pencil: Custom Design
+> :white_check_mark: Custom Design
 - [GitHub](https://github.com/mbrubeck/robinson)
 - [Part 1 - Getting Started](https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html)
 - [Part 2 - HTML](https://limpet.net/mbrubeck/2014/08/11/toy-layout-engine-2.html)
@@ -334,7 +373,7 @@ Assessment will focus on:
 - [GitHub](https://github.com/twilco/kosmonaut)
   
 **Polypane**
-> :pencil: Uses Electron WebView
+> :x: Uses Electron WebView; Not a true browser implementation
 - [How I built my own browser](https://kilianvalkhof.com/2020/design/how-i-built-my-own-browser/)
 - [Interview with Creator of Polypane, a Powerful Browser for Developers](https://www.infoq.com/articles/polypane-developer-browser-interview/)
     - [On Hacker News](https://news.ycombinator.com/item?id=19553941)
