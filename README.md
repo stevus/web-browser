@@ -53,7 +53,7 @@ Development considerations:
 
 ### Creating the DOM Tree
 
-DOM tree maintains the hierarchy of all the HTML nodes (visual and nonvisual) on the page.
+The [DOM Tree](https://dom.spec.whatwg.org/) maintains the hierarchy of all the HTML nodes (visual and nonvisual) on the page.
 
 ```
 <!DOCTYPE html>
@@ -113,7 +113,7 @@ The objective of this module is to output a CSSOM (Cascading Style Sheet Object 
 
 ### Creating the CSSOM Tree
 
-The CSSOM tree maintaings the knowledge of all styles of the DOM tree so long as a rule has been specified in external, inline or embedded CSS.
+The [CSSOM Tree](https://www.w3.org/TR/cssom-1/) maintaings the knowledge of all styles of the DOM tree so long as a rule has been specified in external, inline or embedded CSS.
 
 ```
 body {
