@@ -155,8 +155,9 @@ Also, note that the above tree is not the complete CSSOM tree and only shows the
 
 ### Changes in the CSSOM tree
 
-The CSSOM tree changes when:
-- A piece of Javascript has triggered a change in the DOM or modified CSS on one more nodes of HTML on the page.
+The CSSOM tree is refreshed when:
+- The dimensions of the browser viewport have changed
+- The visibility of an HTML node has changed
 
 Question: How are media queries represented in the CSSOM tree?
 
@@ -193,8 +194,6 @@ This module handles how to interpret the parsed HTML and creating a plan to disp
 The Render Tree maintains the knowledge of which nodes are rendered onto the page and where they are located and how they are should appear according to constraints such as screen size and user interaction.
 
 - Combine the DOM Tree and CSSOM Tree.
-
-![](./JFSvQmJ5p.avif)
   
 ### Additional Information
 
