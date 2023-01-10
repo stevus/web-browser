@@ -149,9 +149,9 @@ The CSSOM has a tree structure because the browser starts with the most general 
 
 ![](./keK3wDv9k2KzJA9QubFx.avif)
 
-To make it more concrete, consider the CSSOM tree above. Any text contained within the <span> tag that is placed within the body element, has a font size of 16 pixels and has red text—the font-size directive cascades down from the body to the span. However, if a span tag is child of a paragraph (p) tag, then its contents are not displayed.
+Every browser provides a default set of styles also known as "user agent styles". These styles form the initial CSSOM tree and the external, inline or embedded styles simply override these defaults.[^6]
 
-Also, note that the above tree is not the complete CSSOM tree and only shows the styles we decided to override in our stylesheet. Every browser provides a default set of styles also known as "user agent styles"—that’s what we see when we don’t provide any of our own—and our styles simply override these defaults.[^3] 
+Construction of the CSSOM tree is in the critical rendering path and this process is completed very quickly, faster than a single DNS lookup.[^6]
 
 ### Changes in the CSSOM tree
 
@@ -424,3 +424,4 @@ Assessment will focus on:
 [^3]: [Render-tree Construction, Layout, and Paint](https://web.dev/critical-rendering-path-render-tree-construction/)
 [^4]: [Josh on Design: Building a Rust Web Browser](https://joshondesign.com/2020/03/10/rust_minibrowser)
 [^5]: [Constructing a Document Tree](https://browser.engineering/html.html)
+[^6]: [How Browsers Work - Building the CSSOM](https://developer.mozilla.org/en-US/docs/Web/Performance/How_browsers_work#building_the_cssom)
