@@ -414,6 +414,12 @@ Assessment will focus on:
 - https://github.com/cixtor/readability
 - https://kas-gui.github.io/blog/state-of-GUI-2022.html
 
+## Miscellaneous (I need to sort)
+
+- https://eylenburg.github.io/browser_engines.htm
+- https://eylenburg.github.io/browser_comparison.htm
+- https://news.ycombinator.com/item?id=34369560
+
 ## Ad Block for Web Browsers
 
 - https://github.com/brave/adblock-rust
