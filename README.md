@@ -259,6 +259,7 @@ Nothing will fully match between Webkit, Firefox and Edge spacing because of NCS
 | JavascriptCore  | Webkit by the Safari browser  |     |     |
 | SquirrelFish  |  Webkit and adds JIT like TraceMonkey |     |     |
 | V8  | Google's Javascript engine used in Chrome and Opera  |     |     |
+| [Chakra](https://github.com/chakra-core/ChakraCore) |    |   |   |   |  
 |   |   |     |     |
 
 A Javascript engine consists of a Lexer and a Parser.
@@ -266,6 +267,8 @@ A Javascript engine consists of a Lexer and a Parser.
 This module is entirely separate from the Browser Engine.
 
 Several of these tend to be tied to a particular rendering engine.
+
+- https://web.archive.org/web/20230113174326im_/https://egbert.net/images/timeline-js-jit-engines.svg
 
 ## GUI Toolkit
 
