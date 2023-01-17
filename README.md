@@ -49,7 +49,7 @@ The objective of this module is to output a DOM (Document Object Model) tree to 
 |   |   |     |     |
 
 Development considerations:
-- Must handle different content types based on MIME type
+- Must handle different content types based on MIME type (https://csvbase.com/blog/2)
 
 ### Creating the DOM Tree
 
