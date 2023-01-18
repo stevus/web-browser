@@ -153,6 +153,10 @@ Every browser provides a default set of styles also known as "user agent styles"
 
 Construction of the CSSOM tree is in the critical rendering path and this process is completed very quickly, faster than a single DNS lookup.[^6]
 
+- https://blogs.windows.com/msedgedev/2023/01/17/the-truth-about-css-selector-performance/
+- https://nolanlawson.com/2022/06/22/style-scoping-versus-shadow-dom-which-is-fastest/
+- https://nolanlawson.com/2023/01/17/my-talk-on-css-runtime-performance/
+
 ### Changes in the CSSOM tree
 
 The CSSOM tree is refreshed when:
