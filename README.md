@@ -316,6 +316,10 @@ Development considerations:
 - Proxies
 - User options
 
+- https://github.com/alex/what-happens-when
+- https://aws.amazon.com/blogs/mobile/what-happens-when-you-type-a-url-into-your-browser/
+- https://sheep.horse/2017/10/how_you_are_reading_this_page.html
+
 ## Database
 
 Stores things relevant to the browser such as:
