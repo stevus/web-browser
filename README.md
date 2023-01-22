@@ -433,8 +433,17 @@ Assessment will focus on:
 
 ## Ad Block for Web Browsers
 
+This is the main source of motivation - to learn how to undesired content is blocked from view and prevented from running.
+
 - https://github.com/brave/adblock-rust
 - https://www.cs.ucr.edu/~zhiyunq/pub/pets17_anti_adblocker.pdf
+- https://levelup.gitconnected.com/building-your-own-adblocker-in-literally-10-minutes-1eec093b04cd
+- https://medium.com/@KentGruber/build-your-own-ad-blocker-90230436e364
+- https://hackernoon.com/your-own-ad-blocker-in-3-minutes-bpo42wz
+- https://adrianstoll.com/post/create-your-own-adblocker-an-introduction-to-writing-chrome-extensions/
+- http://diposit.ub.edu/dspace/bitstream/2445/119257/2/memoria.pdf
+- https://www.zdnet.com/article/ublock-origin-gets-option-to-block-all-javascript-execution-by-default/
+- https://www.kevel.com/blog/how-ad-blockers-work
 
 [^1]: [Understanding DOM, CSSOM, Render Tree, Layout, and Painting](https://medium.com/weekly-webtips/understand-dom-cssom-render-tree-layout-and-painting-9f002f43d1aa)
 [^2]: [Looking for a clear definition of what a "tokenizer", "parser" and "lexers" are and how they are related to each other and used?](https://stackoverflow.com/questions/380455/looking-for-a-clear-definition-of-what-a-tokenizer-parser-and-lexers-are)
