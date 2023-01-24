@@ -90,6 +90,8 @@ Implementations exist that combine the processes of Lexing and Parsing and call 
 The DOM tree changes when:
 - A piece of Javascript has triggered created, removed or modified existing HTML nodes on the page.
 
+![](./script_data.png)
+
 ### Links
 
 - https://joshondesign.com/2020/03/14/rust_browser_parser 
@@ -100,6 +102,7 @@ The DOM tree changes when:
 - https://github.com/tensor-programming/rust_browser_part_1
 - https://blog.cloudflare.com/html-parsing-2/
 - https://medium.com/geekculture/should-html-parsing-in-browsers-be-standardized-50f5012ae9f7
+- https://htmlparser.info/parser/
 
 ## Browser Engine - CSS Module
 
@@ -395,6 +398,18 @@ Assessment will focus on:
 - [Website](https://getmetastream.com/)
 - [I tried creating a web browser, and Google blocked me](https://blog.samuelmaddock.com/posts/google-widevine-blocked-my-browser/)
 
+**Lexbor**
+> :white_check_mark: Custom Design
+- https://lexbor.com/articles/html/
+
+**Browser From Scratch - Viethung**
+> :white_check_mark: Custom Design
+- [Browser from Scratch: Introduction](https://viethung.space/blog/2020/05/29/Browser-from-Scratch-Introduction/)
+- [Browser from Scratch: DOM API](https://viethung.space/blog/2020/09/01/Browser-from-Scratch-DOM-API/)
+- [Browser from Scratch: HTML parsing](https://viethung.space/blog/2020/10/24/Browser-from-Scratch-HTML-parsing/)
+- [Browser from Scratch: CSS parsing & processing](https://viethung.space/blog/2021/01/13/Browser-from-Scratch-CSS-parsing-processing/)
+- [Browser from Scratch: Layout](https://viethung.space/blog/2021/09/26/Browser-from-Scratch-Layout/)
+
 ## Open Source Web Browsers
 
 - https://librewolf.net/
@@ -430,6 +445,8 @@ Assessment will focus on:
 - https://eylenburg.github.io/browser_engines.htm
 - https://eylenburg.github.io/browser_comparison.htm
 - https://news.ycombinator.com/item?id=34369560
+- https://lexborisov.github.io/myhtml/
+- https://www.cocoanetics.com/2011/09/taming-html-parsing-with-libxml-1/
 
 ## Ad Block for Web Browsers
 
