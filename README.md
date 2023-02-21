@@ -447,6 +447,7 @@ Assessment will focus on:
 - https://news.ycombinator.com/item?id=34369560
 - https://lexborisov.github.io/myhtml/
 - https://www.cocoanetics.com/2011/09/taming-html-parsing-with-libxml-1/
+- https://github.com/psilva261/opossum
 
 ## Ad Block for Web Browsers
 
