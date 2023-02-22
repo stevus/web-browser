@@ -289,6 +289,8 @@ This is the module that draws the elements created by the rendering engine to th
 | GTK  |   |     |     |
 |   |   |     |     |
 
+- https://github.com/DioxusLabs/taffy
+
 ## User Interface
 
 This module handles displaying the UI for operations such as:
@@ -448,6 +450,10 @@ Assessment will focus on:
 - https://lexborisov.github.io/myhtml/
 - https://www.cocoanetics.com/2011/09/taming-html-parsing-with-libxml-1/
 - https://github.com/psilva261/opossum
+- https://github.com/ZeroX-DG/awesome-browser
+- https://github.com/jchv/cleansheets
+- https://awesomekling.github.io/Ladybird-a-new-cross-platform-browser-project/
+- https://linus.dev/posts/ladybird-browser-year-in-review-2022/
 
 ## Ad Block for Web Browsers
 
