@@ -429,6 +429,7 @@ Assessment will focus on:
   - https://github.com/SerenityOS/serenity/tree/master/Ladybird
   - https://linus.dev/posts/ladybird-browser-year-in-review-2022/
   - https://awesomekling.github.io/Ladybird-a-new-cross-platform-browser-project/
+  - https://www.youtube.com/watch?v=X38MTKHt3_I
 
 ## How Web Browsers Work
 
