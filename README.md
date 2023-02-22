@@ -424,6 +424,11 @@ Assessment will focus on:
 - https://awesomekling.github.io/Ladybird-a-new-cross-platform-browser-project/
 - https://news.ycombinator.com/item?id=32809126
 - https://news.ycombinator.com/item?id=24170201
+- Ladybird
+  - https://github.com/SerenityOS/serenity/tree/master/Ladybird
+  - https://github.com/SerenityOS/serenity/tree/master/Ladybird
+  - https://linus.dev/posts/ladybird-browser-year-in-review-2022/
+  - https://awesomekling.github.io/Ladybird-a-new-cross-platform-browser-project/
 
 ## How Web Browsers Work
 
@@ -453,7 +458,6 @@ Assessment will focus on:
 - https://github.com/ZeroX-DG/awesome-browser
 - https://github.com/jchv/cleansheets
 - https://awesomekling.github.io/Ladybird-a-new-cross-platform-browser-project/
-- https://linus.dev/posts/ladybird-browser-year-in-review-2022/
 
 ## Ad Block for Web Browsers
 
