@@ -343,7 +343,7 @@ For example, if you visit www.example.com, the DNS server will return the IP add
 
 ### 3-way TCP Handshake
 
-![](./tklxl3mwvhwqi09uk9l3.png)
+![](./tklxl3mwvhwqi09uk9l3.jfif)
 
 The next step is to establish a TCP connection with the server. This is done by a 3-way TCP handshake.
 
