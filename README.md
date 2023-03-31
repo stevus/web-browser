@@ -530,3 +530,8 @@ Image from https://brave.com/adauctions-economist/
 [^4]: [Josh on Design: Building a Rust Web Browser](https://joshondesign.com/2020/03/10/rust_minibrowser)
 [^5]: [Constructing a Document Tree](https://browser.engineering/html.html)
 [^6]: [How Browsers Work - Building the CSSOM](https://developer.mozilla.org/en-US/docs/Web/Performance/How_browsers_work#building_the_cssom)
+
+## On Bypassing Paywalls
+
+- http://facebook.com/l.php?u=and_WSJ_link
+- https://12ft.io/
