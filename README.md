@@ -506,6 +506,7 @@ Assessment will focus on:
 - https://github.com/ZeroX-DG/awesome-browser
 - https://github.com/jchv/cleansheets
 - https://awesomekling.github.io/Ladybird-a-new-cross-platform-browser-project/
+- https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser
 
 ## Ad Block for Web Browsers
 
