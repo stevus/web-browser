@@ -509,6 +509,7 @@ Assessment will focus on:
 - https://github.com/jchv/cleansheets
 - https://awesomekling.github.io/Ladybird-a-new-cross-platform-browser-project/
 - https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser
+- https://cohost.org/mcc/post/1406157-i-want-to-talk-about-webgpu
 
 ## Ad Block for Web Browsers
 
