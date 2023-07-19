@@ -511,6 +511,7 @@ Assessment will focus on:
 - https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser
 - https://cohost.org/mcc/post/1406157-i-want-to-talk-about-webgpu
 - https://gemini.circumlunar.space/
+- https://github.com/stevus/Web-Environment-Integrity/blob/main/explainer.md
 
 ## Ad Block for Web Browsers
 
