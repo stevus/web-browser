@@ -277,6 +277,9 @@ Several of these tend to be tied to a particular rendering engine.
 
 - https://web.archive.org/web/20230113174326im_/https://egbert.net/images/timeline-js-jit-engines.svg
 
+### Links
+- https://boshen.github.io/javascript-parser-in-rust/docs/intro/
+
 ## GUI Toolkit
 
 This is the module that draws the elements created by the rendering engine to the screen .
