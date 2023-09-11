@@ -1,4 +1,11 @@
-# Web Browser
+# Personal Web Browser
+
+Goals:
+
+Creating a personal web browser seeks to provide certain benefits and accomplish objectives under the direct control of myself.
+
+- A locked feature set
+- No ads
 
 Considerations:
 
@@ -32,6 +39,8 @@ Complexity of modules is represented in the amount of :computer:
 - https://github.com/tensor-programming/rust_browser_6_final
 
 # Elements
+
+I am separating each set of responsibilities of a web browser into what I am calling modules. Sole of this might coincidentally align with publicly accepted nomenclature in the analysis of design of web browsers.
 
 ## Browser Engine - HTML module
 
@@ -274,6 +283,10 @@ A Javascript engine consists of a Lexer and a Parser.
 This module is entirely separate from the Browser Engine.
 
 Several of these tend to be tied to a particular rendering engine.
+
+![image](https://github.com/stevus/web-browser/assets/1261603/24cbba46-caf2-4bf9-9c75-0d89fc2327bf)
+
+![image](https://github.com/stevus/web-browser/assets/1261603/51dcb107-4b4f-46df-a2dd-0ee178ad63ad)
 
 - https://web.archive.org/web/20230113174326im_/https://egbert.net/images/timeline-js-jit-engines.svg
 
