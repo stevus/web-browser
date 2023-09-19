@@ -22,17 +22,17 @@ Considerations:
 - https://browser.engineering/
 - https://www.youtube.com/watch?v=xNu6U5XCMMQ&list=PLJbE2Yu2zumDD5vy2BuSHvFZU0a6RDmgb&index=14
 
-| ![alt](./Image_1.png) |  ![alt](./Image_2.png) |  ![alt](./Image_3.png) | 
-|:--:| :--:| :--:| 
-| *Caption* | *Caption* | *Caption* |
+| ![alt](./Image_1.png) | ![alt](./Image_2.png) | ![alt](./Image_3.png) |
+|-:-:-------------------|-:-:-------------------|-:-:-------------------|
+| *Caption*             | *Caption*             | *Caption*             |
 
 Complexity of modules is represented in the amount of :computer:
 
 ## Overall Process
 
-| ![alt](./Image.png) |  ![alt](./page-render-process.svg) | 
-|:--:| :--:| 
-| *Generalized understanding of process (web)* | *My current understanding* |
+| ![alt](./Image.png)                          | ![alt](./page-render-process.svg) |
+|-:-:------------------------------------------|-:-:-------------------------------|
+| *Generalized understanding of process (web)* | *My current understanding*        |
 
 ## Example Implementation
 
@@ -48,14 +48,18 @@ The objective of this module is to output a DOM (Document Object Model) tree to 
 
 > :computer: :computer: :computer:
 
-| Library  | Browser  |  Language  |    Stability  |
-| - | - |   -  | -  |
-| Flex  |   |     |     |
-| Lex  |   |     |     |
-| Yacc  |   |     |     |
-|  Bison |   |     |     |
-|  Expat |   |  Python   |     |
-|   |   |     |     |
+| Library                                            | Browser | Language | Stability |
+|----------------------------------------------------|---------|----------|-----------|
+| Flex                                               |         |          |           |
+| Lex                                                |         |          |           |
+| Yacc                                               |         |          |           |
+| Bison                                              |         |          |           |
+| Expat                                              |         | Python   |           |
+| [tl](https://github.com/y21/tl)                    |         | Rust     |           |
+| [html5ever](https://github.com/servo/html5ever)    | Servo   | Rust     |           |
+| [lol-html](https://github.com/cloudflare/lol-html) |         | Rust     |           |
+| [html5gum](https://github.com/untitaker/html5gum)  |         | Rust     |           |
+|                                                    |         |          |           |
 
 Development considerations:
 - Must handle different content types based on MIME type (https://csvbase.com/blog/2)
@@ -119,9 +123,9 @@ The DOM tree changes when:
 
 The objective of this module is to output a CSSOM (Cascading Style Sheet Object Model) tree to be consumed by the rendering engine.
 
-| Library  | Browser  | Language  |    Stability  |
-| - | - |  -   | -  |
-|   |   |     |     |
+| Library | Browser | Language | Stability |
+|---------|---------|----------|-----------|
+|         |         |          |           |
 
 ### Creating the CSSOM Tree
 
@@ -195,15 +199,15 @@ This module handles how to interpret the parsed HTML and creating a plan to disp
 
 > :triangular_flag_on_post: There is not a lot of community exploration and research on this subject which leads me to believe it is heavily misunderstood.
 
-| Library  | Browser  | Language  |    Stability  |
-| - | - |  -   | -  |
-| Trident  | Internet Explorer  |     |     |
-| Gecko  | Firefox  |     |     |
-| [Webkit](https://github.com/WebKit/WebKit)  | Safari and Chrome 0-27  |     |     |
-| KHTML  |  KDE desktop environment. Webkit forked from KHTML some years ago |     |     |
-|  Elektra |  Opera 4-6 |     |     |
-|  Presto |  Opera 7-12  |     |     |
-| Blink  |  Chrome 28+, Opera 15+, webkit fork |     |     |
+| Library                                    | Browser                                                          | Language | Stability |
+|--------------------------------------------|------------------------------------------------------------------|----------|-----------|
+| Trident                                    | Internet Explorer                                                |          |           |
+| Gecko                                      | Firefox                                                          |          |           |
+| [Webkit](https://github.com/WebKit/WebKit) | Safari and Chrome 0-27                                           |          |           |
+| KHTML                                      | KDE desktop environment. Webkit forked from KHTML some years ago |          |           |
+| Elektra                                    | Opera 4-6                                                        |          |           |
+| Presto                                     | Opera 7-12                                                       |          |           |
+| Blink                                      | Chrome 28+, Opera 15+, webkit fork                               |          |           |
 
 ### Creating the Render Tree
 
@@ -266,17 +270,17 @@ Nothing will fully match between Webkit, Firefox and Edge spacing because of NCS
 
 > :computer: :computer: :computer: :computer: :computer:
   
-| Library  | Browser  | Language  |    Stability  |
-| - | - |  -   | -  |
-| SpiderMonkey  | Gecko/Firefox  |     |     |
-| TraceMonkey  |  SpiderMonkey in Firefox 3.1 and introduces JIT (just-in-time) compilation |     |     |
-| KJS  | Konqueror, tied to KHTML  |     |     |
-|  JScript | Trident, Internet Explorer  |     |     |
-| JavascriptCore  | Webkit by the Safari browser  |     |     |
-| SquirrelFish  |  Webkit and adds JIT like TraceMonkey |     |     |
-| V8  | Google's Javascript engine used in Chrome and Opera  |     |     |
-| [Chakra](https://github.com/chakra-core/ChakraCore) |    |   |   |   |  
-|   |   |     |     |
+| Library                                             | Browser                                                                   | Language | Stability |  |
+|-----------------------------------------------------|---------------------------------------------------------------------------|----------|-----------|--|
+| SpiderMonkey                                        | Gecko/Firefox                                                             |          |           |  |
+| TraceMonkey                                         | SpiderMonkey in Firefox 3.1 and introduces JIT (just-in-time) compilation |          |           |  |
+| KJS                                                 | Konqueror, tied to KHTML                                                  |          |           |  |
+| JScript                                             | Trident, Internet Explorer                                                |          |           |  |
+| JavascriptCore                                      | Webkit by the Safari browser                                              |          |           |  |
+| SquirrelFish                                        | Webkit and adds JIT like TraceMonkey                                      |          |           |  |
+| V8                                                  | Google's Javascript engine used in Chrome and Opera                       |          |           |  |
+| [Chakra](https://github.com/chakra-core/ChakraCore) |                                                                           |          |           |  |
+|                                                     |                                                                           |          |           |  |
 
 A Javascript engine consists of a Lexer and a Parser.
 
@@ -297,13 +301,13 @@ Several of these tend to be tied to a particular rendering engine.
 
 This is the module that draws the elements created by the rendering engine to the screen .
 
-| Library  | Browser  | Language  |    Stability  |
-| - | - |  -   | -  |
-| wxWidgets  |   |     |     |
-| Qt  |   |     |     |
-| Tcl/Tk  |   |     |     |
-| GTK  |   |     |     |
-|   |   |     |     |
+| Library   | Browser | Language | Stability |
+|-----------|---------|----------|-----------|
+| wxWidgets |         |          |           |
+| Qt        |         |          |           |
+| Tcl/Tk    |         |          |           |
+| GTK       |         |          |           |
+|           |         |          |           |
 
 - https://github.com/DioxusLabs/taffy
 
@@ -316,10 +320,10 @@ This module handles displaying the UI for operations such as:
 - Typing in a URL
 - Autocompleting URLs
 
-| Library  | Browser  | Language  |    Stability  |
-| - | - |   -  | -  |
-| skia  | chrome  |     |     |
-|   |   |     |
+| Library | Browser | Language | Stability |
+|---------|---------|----------|-----------|
+| skia    | chrome  |          |           |
+|         |         |          |           |
   
 ## Networking
 
@@ -331,10 +335,10 @@ Navigation is the first step of loading a web page. It happens when the user ent
 
 This module handles all of complexity / subtlety of the HTTP protocol eg data transfer, expires headers, different versions, TLS etc.
   
-| Library  | Browser  | Language  |    Stability  |
-| - | - |  -   | -  |
-| Necko  | Firefox  |     |     |
-|   |   |     |     |
+| Library | Browser | Language | Stability |
+|---------|---------|----------|-----------|
+| Necko   | Firefox |          |           |
+|         |         |          |           |
 
 Url Request Methods
 Url Multi IO Threaded Request Methods for CSS, Images, Media and JS files, these have to be live to be fast and efficient.
