@@ -297,6 +297,9 @@ Several of these tend to be tied to a particular rendering engine.
 ### Links
 - https://boshen.github.io/javascript-parser-in-rust/docs/intro/
 
+Something related to how JS code is parsed into an IR (Intermediate Representation) making it better suited to a specific machine the browser is running on.
+- https://www.tutorialspoint.com/compiler_design/compiler_design_intermediate_code_generations.htm
+
 ## GUI Toolkit
 
 This is the module that draws the elements created by the rendering engine to the screen .
@@ -503,6 +506,8 @@ Assessment will focus on:
 
 ## How Web Browsers Work
 
+- https://ehsan.github.io/how-browsers-work
+- https://taligarsiel.com/Projects/howbrowserswork1.htm
 - https://developer.chrome.com/blog/inside-browser-part1/
 - https://hacks.mozilla.org/2017/10/the-whole-web-at-maximum-fps-how-webrender-gets-rid-of-jank/
 - https://www.peteresnyder.com/static/papers/speedreader-www-2019.pdf
