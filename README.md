@@ -514,9 +514,13 @@ Assessment will focus on:
 - https://web.dev/critical-rendering-path-render-tree-construction/
 
 ## Libraries related to Web Browsers
-
-- https://github.com/cixtor/readability
 - https://kas-gui.github.io/blog/state-of-GUI-2022.html
+
+## Readability Mode
+- https://github.com/cixtor/readability
+- https://github.com/amumu/safari-reader-js
+- https://github.com/mozilla/readability
+- https://github.com/luin/readability
 
 ## Miscellaneous (I need to sort)
 
