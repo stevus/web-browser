@@ -544,6 +544,10 @@ Assessment will focus on:
 - https://github.com/ir33k/gmi100
 - https://github.com/stevus/Web-Environment-Integrity/blob/main/explainer.md
 
+## Playing Video in Web Browsers
+
+- https://medium.com/canal-tech/how-video-streaming-works-on-the-web-an-introduction-7919739f7e1
+
 ## Ad Block for Web Browsers
 
 This is the main source of motivation - to learn how to undesired content is blocked from view and prevented from running.
