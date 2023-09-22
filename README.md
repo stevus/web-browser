@@ -302,17 +302,17 @@ Something related to how JS code is parsed into an IR (Intermediate Representati
 
 ## GUI Toolkit
 
-This is the module that draws the elements created by the rendering engine to the screen .
+This is the module that draws the elements created by the rendering engine to the browser window containing the webpage.
 
-| Library   | Browser | Language | Stability |
-|-----------|---------|----------|-----------|
-| wxWidgets |         |          |           |
-| Qt        |         |          |           |
-| Tcl/Tk    |         |          |           |
-| GTK       |         |          |           |
-|           |         |          |           |
+| Library                                      | Browser | Language | Stability |
+|----------------------------------------------|---------|----------|-----------|
+| wxWidgets                                    |         |          |           |
+| Qt                                           |         |          |           |
+| Tcl/Tk                                       |         |          |           |
+| GTK                                          |         |          |           |
+| [Taffy](https://github.com/DioxusLabs/taffy) |         |          |           |
 
-- https://github.com/DioxusLabs/taffy
+(Is this module used by the User Interface to draw the website portion?)
 
 ## User Interface
 
@@ -323,11 +323,10 @@ This module handles displaying the UI for operations such as:
 - Typing in a URL
 - Autocompleting URLs
 
-| Library | Browser | Language | Stability |
-|---------|---------|----------|-----------|
-| skia    | chrome  |          |           |
-|         |         |          |           |
-  
+| Library                   | Browser | Language | Stability |
+|---------------------------|---------|----------|-----------|
+| [skia](https://skia.org/) | chrome  |          |           |
+ 
 ## Networking
 
 > :computer: :computer: 
