@@ -502,6 +502,7 @@ Assessment will focus on:
   - https://www.youtube.com/watch?v=X38MTKHt3_I
 - https://gitlab.torproject.org/tpo/applications/mullvad-browser/
   - https://news.ycombinator.com/item?id=35421034
+- [Chawam - Terminal Web Browser](https://sr.ht/~bptato/chawan/)
 
 ## How Web Browsers Work
 
