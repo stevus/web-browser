@@ -452,6 +452,26 @@ Assessment will focus on:
 - [Part 5 - Boxes](https://limpet.net/mbrubeck/2014/09/08/toy-layout-engine-5-boxes.html)
 - [Part 6 - Block Layout](https://limpet.net/mbrubeck/2014/09/17/toy-layout-engine-6-block.html)
 - [Part 7 - Painting 101](https://limpet.net/mbrubeck/2014/11/05/toy-layout-engine-7-painting.html)
+
+**GoSuB**
+> :white_check_mark: Custom Design
+- [GitHub](https://github.com/jaytaph/gosub-browser)
+- [The one where he is writing a browser...](https://codemusings.nl/@jaytaph/p/MQpHToAx8c1KXyU98Auip4)
+- [GoSuB Browser Progress, pt1](https://codemusings.nl/@jaytaph/p/4PGS6LmaYWcqAtLbF2UmW9)
+- [GoSuB Browser Progress, pt2](https://codemusings.nl/@jaytaph/p/FsX6jUZeDKjQHw6Z21tN3E)
+- [GoSuB Browser Progress, pt3](https://codemusings.nl/@jaytaph/p/2QduMFxNzs5kZyjEAMWhPE)
+- [GoSuB Browser Progress, pt4](https://codemusings.nl/@jaytaph/p/Vf343YLPXyHMtBdc3vxzGA)
+- [GoSuB Browser Progress, pt5](https://codemusings.nl/@jaytaph/p/B73pBMWqjLx2En1W4wGKgi)
+- [GoSuB Browser Progress, pt6](https://codemusings.nl/@jaytaph/p/Tsbmt1yFWdzS3QDNt9sCU7)
+- [GoSuB Browser Progress, pt7](https://codemusings.nl/@jaytaph/p/F6yS6qRu77VFGg4hs2qu26)
+- [GoSuB Browser Progress, pt8](https://codemusings.nl/@jaytaph/p/AxuSNVFt8KMH6DpQkp7vKK)
+- [GoSuB Browser Progress, pt9](https://codemusings.nl/@jaytaph/p/LDMbsG2rMxHwctHUn2VwfJ)
+- [GoSuB Browser Progress, pt10](https://codemusings.nl/@jaytaph/p/J58UD8m7BzZgdprVXEu5Gk)
+- [GoSuB Browser Progress, pt11](https://codemusings.nl/@jaytaph/p/YSwSALm1ksqT8ix7RipwYN)
+- [GoSuB Browser Progress, pt12](https://codemusings.nl/@jaytaph/p/GGJamNEKiVzW8RxK5tSEHn)
+- [GoSuB Browser Progress, pt13](https://codemusings.nl/@jaytaph/p/9rcsypRq2U59wvpekjE9Nf)
+- [GoSuB Browser Progress, pt14](https://codemusings.nl/@jaytaph/p/M5G27FEJEBDxoecAN9QzL8)
+- [GoSuB Browser Progress, pt15](https://codemusings.nl/@jaytaph/p/WxUbXppbk6r2gzMGX9QSFd)
   
 **EinkBro**
 - [GitHub](https://github.com/plateaukao/einkbro)
