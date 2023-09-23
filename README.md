@@ -355,6 +355,8 @@ Development considerations:
 - https://aws.amazon.com/blogs/mobile/what-happens-when-you-type-a-url-into-your-browser/
 - https://sheep.horse/2017/10/how_you_are_reading_this_page.html
 - https://howhttps.works/
+- https://www.w3.org/TR/navigation-timing/
+- https://aosabook.org/en/posa/high-performance-networking-in-chrome.html
 
 ### DNS lookup
 
