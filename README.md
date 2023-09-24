@@ -314,6 +314,10 @@ This is the module that draws the elements created by the rendering engine to th
 
 (Is this module used by the User Interface to draw the website portion?)
 
+Other links:
+- https://github.com/pop-os/cosmic-text
+- https://yuejiang-nj.github.io/Publications/2020CHI_ORCSolver/paper.pdf
+
 ## User Interface
 
 This module handles displaying the UI for operations such as:
