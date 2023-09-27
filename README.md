@@ -592,6 +592,7 @@ Image from https://brave.com/adauctions-economist/
 - https://www.kevel.com/blog/how-ad-blockers-work
 - https://dl.acm.org/doi/fullHtml/10.1145/3308558.3313558
 - https://github.com/qnoum/bypass-paywalls-chrome-clean-magnolia1234
+- [On configuring or refreshing ad block sources for uBlock](https://github.com/easylist/easylist/wiki/Youtube-Issues#youtube-ads-showing-pre-roll-and-mid-roll)
 
 [^1]: [Understanding DOM, CSSOM, Render Tree, Layout, and Painting](https://medium.com/weekly-webtips/understand-dom-cssom-render-tree-layout-and-painting-9f002f43d1aa)
 [^2]: [Looking for a clear definition of what a "tokenizer", "parser" and "lexers" are and how they are related to each other and used?](https://stackoverflow.com/questions/380455/looking-for-a-clear-definition-of-what-a-tokenizer-parser-and-lexers-are)
