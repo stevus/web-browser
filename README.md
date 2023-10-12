@@ -594,6 +594,28 @@ Image from https://brave.com/adauctions-economist/
 - https://github.com/qnoum/bypass-paywalls-chrome-clean-magnolia1234
 - [On configuring or refreshing ad block sources for uBlock](https://github.com/easylist/easylist/wiki/Youtube-Issues#youtube-ads-showing-pre-roll-and-mid-roll)
 
+There is some happenings that YouTube is detecting and blocking ad-blockers so that's funny
+- https://community.brave.com/t/suddenly-getting-ad-blockers-are-not-allowed-on-youtube/507177/16
+- https://mashable.com/article/youtube-ad-blockers-notifications
+
+  I found this potential workaround
+- https://www.reddit.com/r/youtube/comments/171yvrv/they_added_a_damn_timer_for_the_adblock_is_not/
+```
+EDIT - Ok that didn't work, but I added the following to my filter list in ublock and haven't seen it pop back up in the last 20 minutes of trying to make it happen.
+
+Ill update again tomorrow on if this worked or not. I'm sure this is going to be a cat and mouse game going forward with youtube, and if it really comes down to it i'll just start downloading every video I want to watch.
+
+youtube.com##+js(set, yt.config_.openPopupConfig.supportedPopups.adBlockMessageViewModel, false)
+
+youtube.com##+js(set, Object.prototype.adBlocksFound, 0)
+
+youtube.com##+js(set, ytplayer.config.args.raw_player_response.adPlacements, [])
+
+youtube.com##+js(set, Object.prototype.hasAllowedInstreamAd, true)
+```
+
+
+
 [^1]: [Understanding DOM, CSSOM, Render Tree, Layout, and Painting](https://medium.com/weekly-webtips/understand-dom-cssom-render-tree-layout-and-painting-9f002f43d1aa)
 [^2]: [Looking for a clear definition of what a "tokenizer", "parser" and "lexers" are and how they are related to each other and used?](https://stackoverflow.com/questions/380455/looking-for-a-clear-definition-of-what-a-tokenizer-parser-and-lexers-are)
 [^3]: [Render-tree Construction, Layout, and Paint](https://web.dev/critical-rendering-path-render-tree-construction/)
