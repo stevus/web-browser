@@ -85,7 +85,11 @@ The [DOM Tree](https://dom.spec.whatwg.org/) maintains the hierarchy of all the 
 
 1. The HTML module of the Browser Engine receives an input byte stream representing HTML content
 3. A Lexer tokenizes the input byte stream and converts it into equivalent HTML nodes
-4. A Parser arranges the HTML nodes into an Abstract Syntax Tree (DOM tree)
+  - This input is potentially ran through a sanitizer?
+    - https://github.com/cure53/DOMPurify
+  - Also some CSP protections could be applied
+    - https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
+5. A Parser arranges the HTML nodes into an Abstract Syntax Tree (DOM tree)
     - The Parser interprets all HTML nodes using rules defined in the [HTML specification](https://html.spec.whatwg.org/multipage/)[^1].
 
 ![](./1_bL8cBbr37sv43WW3EfnOKA.webp)
