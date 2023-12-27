@@ -430,9 +430,19 @@ Assessment will focus on:
 - Time
 
 ## Web Browser Projects
-  
+
+**Chromium**
+> :white_check_mark: Open Source Design
+- Building
+  - https://www.chromium.org/developers/how-tos/get-the-code/
+  - https://chromium.googlesource.com/chromium/src/+/main/docs/linux/build_instructions.md
+  - https://www.reddit.com/r/chrome/comments/mkkpsy/a_walkthrough_on_how_to_build_chromium_from_source/
+  - https://askubuntu.com/questions/647137/inox-browser-build-and-patch-chromium-from-source
+  - https://github.com/ungoogled-software/ungoogled-chromium?tab=readme-ov-file
+  - https://chromium.googlesource.com/chromium/src/+/HEAD/docs/windows_build_instructions.md
+  - https://gist.github.com/kennwhite/b05fcdd2161688c1e859f962ec90c4f4
 **Tensor Programming - Rust Browser**
-> :white_check_mark: Custom Design
+> :white_check_mark: Open Source Design
 - [Part 1 - Dom and HTML Parser](https://github.com/tensor-programming/rust_browser_part_1)
 - [Part 2 - CSS Engine and CSS Parser](https://github.com/tensor-programming/rust_browser_part_2)
 - [Part 3 - Style Tree](https://github.com/tensor-programming/rust_browser_part_3)
@@ -441,7 +451,7 @@ Assessment will focus on:
 - [Part 6 - Completing Browser Engine](https://github.com/tensor-programming/rust_browser_6_final)
   
 **Josh on Design - Rust Browser**
-> :white_check_mark: Custom Design
+> :white_check_mark: Open Source Design
 - [GitHub](https://github.com/joshmarinacci/rust-minibrowser)
 - [Part 1 - Building a Web Browser](https://joshondesign.com/2020/03/10/rust_minibrowser)
 - [Part 2 - Parsers](https://joshondesign.com/2020/03/14/rust_browser_parser)
@@ -453,7 +463,7 @@ Assessment will focus on:
 - [Part 8 - Next Steps](https://joshondesign.com/2020/04/15/next-steps)
     
 **A Toy Rendering Engine**
-> :white_check_mark: Custom Design
+> :white_check_mark: Open Source Design
 - [GitHub](https://github.com/mbrubeck/robinson)
 - [Part 1 - Getting Started](https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html)
 - [Part 2 - HTML](https://limpet.net/mbrubeck/2014/08/11/toy-layout-engine-2.html)
@@ -464,7 +474,7 @@ Assessment will focus on:
 - [Part 7 - Painting 101](https://limpet.net/mbrubeck/2014/11/05/toy-layout-engine-7-painting.html)
 
 **GoSuB**
-> :white_check_mark: Custom Design
+> :white_check_mark: Open Source Design
 - [GitHub](https://github.com/jaytaph/gosub-browser)
 - [The one where he is writing a browser...](https://codemusings.nl/@jaytaph/p/MQpHToAx8c1KXyU98Auip4)
 - [GoSuB Browser Progress, pt1](https://codemusings.nl/@jaytaph/p/4PGS6LmaYWcqAtLbF2UmW9)
@@ -501,11 +511,11 @@ Assessment will focus on:
 - [I tried creating a web browser, and Google blocked me](https://blog.samuelmaddock.com/posts/google-widevine-blocked-my-browser/)
 
 **Lexbor**
-> :white_check_mark: Custom Design
+> :white_check_mark: Open Source Design
 - https://lexbor.com/articles/html/
 
 **Browser From Scratch - Viethung**
-> :white_check_mark: Custom Design
+> :white_check_mark: Open Source Design
 - [Browser from Scratch: Introduction](https://viethung.space/blog/2020/05/29/Browser-from-Scratch-Introduction/)
 - [Browser from Scratch: DOM API](https://viethung.space/blog/2020/09/01/Browser-from-Scratch-DOM-API/)
 - [Browser from Scratch: HTML parsing](https://viethung.space/blog/2020/10/24/Browser-from-Scratch-HTML-parsing/)
