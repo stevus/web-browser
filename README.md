@@ -433,14 +433,20 @@ Assessment will focus on:
 
 **Chromium**
 > :white_check_mark: Open Source Design
-- Building
-  - https://www.chromium.org/developers/how-tos/get-the-code/
-  - https://chromium.googlesource.com/chromium/src/+/main/docs/linux/build_instructions.md
-  - https://www.reddit.com/r/chrome/comments/mkkpsy/a_walkthrough_on_how_to_build_chromium_from_source/
-  - https://askubuntu.com/questions/647137/inox-browser-build-and-patch-chromium-from-source
-  - https://github.com/ungoogled-software/ungoogled-chromium?tab=readme-ov-file
-  - https://chromium.googlesource.com/chromium/src/+/HEAD/docs/windows_build_instructions.md
-  - https://gist.github.com/kennwhite/b05fcdd2161688c1e859f962ec90c4f4
+- https://www.chromium.org/developers/how-tos/get-the-code/
+- https://chromium.googlesource.com/chromium/src/+/main/docs/linux/build_instructions.md
+- https://www.reddit.com/r/chrome/comments/mkkpsy/a_walkthrough_on_how_to_build_chromium_from_source/
+- https://askubuntu.com/questions/647137/inox-browser-build-and-patch-chromium-from-source
+- https://chromium.googlesource.com/chromium/src/+/HEAD/docs/windows_build_instructions.md
+- https://gist.github.com/kennwhite/b05fcdd2161688c1e859f962ec90c4f4
+ 
+**UnGoogled Chromium**
+> :white_check_mark: Open Source Design
+
+Chrome, except without all of the Google Web Services integrations
+
+- https://github.com/ungoogled-software/ungoogled-chromium?tab=readme-ov-file
+
 **Tensor Programming - Rust Browser**
 > :white_check_mark: Open Source Design
 - [Part 1 - Dom and HTML Parser](https://github.com/tensor-programming/rust_browser_part_1)
