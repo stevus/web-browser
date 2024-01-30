@@ -601,6 +601,7 @@ This is the main source of motivation - to learn how to undesired content is blo
 ![](./Economist-ad-auctions-1000px.png)
 Image from https://brave.com/adauctions-economist/
 
+- https://github.com/amitbl/blocktube
 - https://github.com/brave/adblock-rust
 - https://www.cs.ucr.edu/~zhiyunq/pub/pets17_anti_adblocker.pdf
 - https://levelup.gitconnected.com/building-your-own-adblocker-in-literally-10-minutes-1eec093b04cd
