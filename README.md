@@ -304,6 +304,15 @@ Several of these tend to be tied to a particular rendering engine.
 Something related to how JS code is parsed into an IR (Intermediate Representation) making it better suited to a specific machine the browser is running on.
 - https://www.tutorialspoint.com/compiler_design/compiler_design_intermediate_code_generations.htm
 
+### Testing
+
+Test exist to evaluate the correctness of a particular Javascript interpreter.
+
+Here is an example that the JS interpreter in SerenityOS uses:
+
+- https://serenityos.github.io/libjs-website/test262/
+- https://github.com/tc39/test262
+
 ## GUI Toolkit
 
 This is the module that draws the elements created by the rendering engine to the browser window containing the webpage.
@@ -527,6 +536,10 @@ Chrome, except without all of the Google Web Services integrations
 - [Browser from Scratch: HTML parsing](https://viethung.space/blog/2020/10/24/Browser-from-Scratch-HTML-parsing/)
 - [Browser from Scratch: CSS parsing & processing](https://viethung.space/blog/2021/01/13/Browser-from-Scratch-CSS-parsing-processing/)
 - [Browser from Scratch: Layout](https://viethung.space/blog/2021/09/26/Browser-from-Scratch-Layout/)
+
+**Serenity OS - Web Browser**
+- https://github.com/SerenityOS/serenity/tree/master/Userland/Applications/Browser
+- https://serenityos.org/
 
 ## Open Source Web Browsers
 
