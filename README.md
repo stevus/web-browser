@@ -508,6 +508,10 @@ Chrome, except without all of the Google Web Services integrations
 - [GoSuB Browser Progress, pt14](https://codemusings.nl/@jaytaph/p/M5G27FEJEBDxoecAN9QzL8)
 - [GoSuB Browser Progress, pt15](https://codemusings.nl/@jaytaph/p/WxUbXppbk6r2gzMGX9QSFd)
   
+**FloorP**
+- https://floorp.app/en/
+- [GitHub](https://github.com/floorp-Projects/floorp/)
+
 **EinkBro**
 - [GitHub](https://github.com/plateaukao/einkbro)
   
