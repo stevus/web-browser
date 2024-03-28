@@ -582,13 +582,22 @@ Chrome, except without all of the Google Web Services integrations
 - https://web.dev/critical-rendering-path-render-tree-construction/
 
 ## Libraries related to Web Browsers
+
 - https://kas-gui.github.io/blog/state-of-GUI-2022.html
 
 ## Readability Mode
+
 - https://github.com/cixtor/readability
 - https://github.com/amumu/safari-reader-js
 - https://github.com/mozilla/readability
 - https://github.com/luin/readability
+
+## In-App Browsers
+
+- https://open-web-advocacy.org/blog/in-app-browsers-the-worst-erosion-of-user-choice-you-havent-heard-of/
+- https://open-web-advocacy.org/files/OWA%20-%20DMA%20Interventions%20-%20In-App%20Browsers%20v1.2.pdf
+- https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser
+- https://infrequently.org/2021/07/hobsons-browser/
 
 ## Miscellaneous (I need to sort)
 
@@ -601,7 +610,6 @@ Chrome, except without all of the Google Web Services integrations
 - https://github.com/ZeroX-DG/awesome-browser
 - https://github.com/jchv/cleansheets
 - https://awesomekling.github.io/Ladybird-a-new-cross-platform-browser-project/
-- https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser
 - https://cohost.org/mcc/post/1406157-i-want-to-talk-about-webgpu
 - https://gemini.circumlunar.space/
 - https://github.com/ir33k/gmi100
