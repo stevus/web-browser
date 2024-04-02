@@ -374,6 +374,8 @@ Development considerations:
 - https://howhttps.works/
 - https://www.w3.org/TR/navigation-timing/
 - https://aosabook.org/en/posa/high-performance-networking-in-chrome.html
+- https://www.moserware.com/2009/06/first-few-milliseconds-of-https.html
+- https://cr.yp.to/djbdns/intro-dns.html
 
 ### DNS lookup
 
