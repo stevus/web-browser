@@ -664,6 +664,11 @@ youtube.com##+js(set, Object.prototype.hasAllowedInstreamAd, true)
 ```
 
 
+![image](https://github.com/stevus/web-browser/assets/1261603/3b59eb01-7c4d-4fd6-9d41-91bb0d8c30ec)
+
+Overview of uBlock's network filtering engine
+
+
 
 [^1]: [Understanding DOM, CSSOM, Render Tree, Layout, and Painting](https://medium.com/weekly-webtips/understand-dom-cssom-render-tree-layout-and-painting-9f002f43d1aa)
 [^2]: [Looking for a clear definition of what a "tokenizer", "parser" and "lexers" are and how they are related to each other and used?](https://stackoverflow.com/questions/380455/looking-for-a-clear-definition-of-what-a-tokenizer-parser-and-lexers-are)
