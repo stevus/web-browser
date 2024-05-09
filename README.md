@@ -340,9 +340,10 @@ This module handles displaying the UI for operations such as:
 - Typing in a URL
 - Autocompleting URLs
 
-| Library                   | Browser | Language | Stability |
-|---------------------------|---------|----------|-----------|
-| [skia](https://skia.org/) | chrome  |          |           |
+| Library                       | Browser | Language | Stability |
+|-------------------------------|---------|----------|-----------|
+| [skia](https://skia.org/)     | Chrome  | C++      |           |
+| [FLTK](https://www.fltk.org/) | Dillo   | C++      |           |
  
 ## Networking
 
@@ -509,6 +510,11 @@ Chrome, except without all of the Google Web Services integrations
 - [GoSuB Browser Progress, pt13](https://codemusings.nl/@jaytaph/p/9rcsypRq2U59wvpekjE9Nf)
 - [GoSuB Browser Progress, pt14](https://codemusings.nl/@jaytaph/p/M5G27FEJEBDxoecAN9QzL8)
 - [GoSuB Browser Progress, pt15](https://codemusings.nl/@jaytaph/p/WxUbXppbk6r2gzMGX9QSFd)
+
+**Dillo**
+> :white_check_mark: Open Source Design
+- [Website](https://dillo-browser.github.io/)
+- [GitHub](https://github.com/dillo-browser/dillo)
   
 **FloorP**
 - https://floorp.app/en/
