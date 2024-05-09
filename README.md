@@ -444,7 +444,7 @@ Assessment will focus on:
 ## Web Browser Projects
 
 **Chromium**
-> :white_check_mark: Open Source Design
+> :white_check_mark: [Open Source Design](https://source.chromium.org/chromium)
 - https://www.chromium.org/developers/how-tos/get-the-code/
 - https://chromium.googlesource.com/chromium/src/+/main/docs/linux/build_instructions.md
 - https://www.reddit.com/r/chrome/comments/mkkpsy/a_walkthrough_on_how_to_build_chromium_from_source/
@@ -453,14 +453,11 @@ Assessment will focus on:
 - https://gist.github.com/kennwhite/b05fcdd2161688c1e859f962ec90c4f4
  
 **UnGoogled Chromium**
-> :white_check_mark: Open Source Design
-
+> :white_check_mark: [Open Source Design](https://github.com/ungoogled-software/ungoogled-chromium?tab=readme-ov-file)
 Chrome, except without all of the Google Web Services integrations
 
-- https://github.com/ungoogled-software/ungoogled-chromium?tab=readme-ov-file
-
 **Tensor Programming - Rust Browser**
-> :white_check_mark: Open Source Design
+> :white_check_mark: [Open Source Design](https://github.com/tensor-programming/rust_browser_part_1)
 - [Part 1 - Dom and HTML Parser](https://github.com/tensor-programming/rust_browser_part_1)
 - [Part 2 - CSS Engine and CSS Parser](https://github.com/tensor-programming/rust_browser_part_2)
 - [Part 3 - Style Tree](https://github.com/tensor-programming/rust_browser_part_3)
@@ -469,8 +466,7 @@ Chrome, except without all of the Google Web Services integrations
 - [Part 6 - Completing Browser Engine](https://github.com/tensor-programming/rust_browser_6_final)
   
 **Josh on Design - Rust Browser**
-> :white_check_mark: Open Source Design
-- [GitHub](https://github.com/joshmarinacci/rust-minibrowser)
+> :white_check_mark: [Open Source Design](https://github.com/joshmarinacci/rust-minibrowser)
 - [Part 1 - Building a Web Browser](https://joshondesign.com/2020/03/10/rust_minibrowser)
 - [Part 2 - Parsers](https://joshondesign.com/2020/03/14/rust_browser_parser)
 - [Part 3 - A Long Slog for Small Features](https://joshondesign.com/2020/03/21/browser_long_slog)
@@ -481,8 +477,7 @@ Chrome, except without all of the Google Web Services integrations
 - [Part 8 - Next Steps](https://joshondesign.com/2020/04/15/next-steps)
     
 **A Toy Rendering Engine**
-> :white_check_mark: Open Source Design
-- [GitHub](https://github.com/mbrubeck/robinson)
+> :white_check_mark: [Open Source Design](https://github.com/mbrubeck/robinson)
 - [Part 1 - Getting Started](https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html)
 - [Part 2 - HTML](https://limpet.net/mbrubeck/2014/08/11/toy-layout-engine-2.html)
 - [Part 3 - CSS](https://limpet.net/mbrubeck/2014/08/13/toy-layout-engine-3-css.html)
@@ -492,8 +487,7 @@ Chrome, except without all of the Google Web Services integrations
 - [Part 7 - Painting 101](https://limpet.net/mbrubeck/2014/11/05/toy-layout-engine-7-painting.html)
 
 **GoSuB**
-> :white_check_mark: Open Source Design
-- [GitHub](https://github.com/jaytaph/gosub-browser)
+> :white_check_mark: [Open Source Design](https://github.com/jaytaph/gosub-browser)
 - [The one where he is writing a browser...](https://codemusings.nl/@jaytaph/p/MQpHToAx8c1KXyU98Auip4)
 - [GoSuB Browser Progress, pt1](https://codemusings.nl/@jaytaph/p/4PGS6LmaYWcqAtLbF2UmW9)
 - [GoSuB Browser Progress, pt2](https://codemusings.nl/@jaytaph/p/FsX6jUZeDKjQHw6Z21tN3E)
@@ -511,20 +505,17 @@ Chrome, except without all of the Google Web Services integrations
 - [GoSuB Browser Progress, pt14](https://codemusings.nl/@jaytaph/p/M5G27FEJEBDxoecAN9QzL8)
 - [GoSuB Browser Progress, pt15](https://codemusings.nl/@jaytaph/p/WxUbXppbk6r2gzMGX9QSFd)
 
-**Dillo**
-> :white_check_mark: Open Source Design
-- [Website](https://dillo-browser.github.io/)
-- [GitHub](https://github.com/dillo-browser/dillo)
+**[Dillo](https://dillo-browser.github.io/)**
+> :white_check_mark: [Open Source Design](https://github.com/dillo-browser/dillo)
   
-**FloorP**
-- https://floorp.app/en/
-- [GitHub](https://github.com/floorp-Projects/floorp/)
+**[FloorP](https://floorp.app/en/)**
+> :white_check_mark: [Open Source Design](https://github.com/floorp-Projects/floorp/)
 
 **EinkBro**
-- [GitHub](https://github.com/plateaukao/einkbro)
+> :white_check_mark: [Open Source Design](https://github.com/plateaukao/einkbro)
   
 **Kosmonaut**
-- [GitHub](https://github.com/twilco/kosmonaut)
+> :white_check_mark: [Open Source Design](https://github.com/twilco/kosmonaut)
   
 **Polypane**
 > :x: Uses Electron WebView; Not a true browser implementation
@@ -532,14 +523,12 @@ Chrome, except without all of the Google Web Services integrations
 - [Interview with Creator of Polypane, a Powerful Browser for Developers](https://www.infoq.com/articles/polypane-developer-browser-interview/)
     - [On Hacker News](https://news.ycombinator.com/item?id=19553941)
 
-**Metastream**
-- [GitHub](https://github.com/samuelmaddock/metastream)
-- [Website](https://getmetastream.com/)
+**[Metastream](https://getmetastream.com/)**
+> :white_check_mark: [Open Source Design](https://github.com/samuelmaddock/metastream)
 - [I tried creating a web browser, and Google blocked me](https://blog.samuelmaddock.com/posts/google-widevine-blocked-my-browser/)
 
-**Lexbor**
+**[Lexbor](https://lexbor.com/articles/html/)**
 > :white_check_mark: Open Source Design
-- https://lexbor.com/articles/html/
 
 **Browser From Scratch - Viethung**
 > :white_check_mark: Open Source Design
@@ -549,9 +538,8 @@ Chrome, except without all of the Google Web Services integrations
 - [Browser from Scratch: CSS parsing & processing](https://viethung.space/blog/2021/01/13/Browser-from-Scratch-CSS-parsing-processing/)
 - [Browser from Scratch: Layout](https://viethung.space/blog/2021/09/26/Browser-from-Scratch-Layout/)
 
-**Serenity OS - Web Browser**
-- https://github.com/SerenityOS/serenity/tree/master/Userland/Applications/Browser
-- https://serenityos.org/
+**[Serenity OS - Web Browser](https://serenityos.org/)**
+> :white_check_mark: [Open Source Design](https://github.com/SerenityOS/serenity/tree/master/Userland/Applications/Browser)
 
 ## Open Source Web Browsers
 
