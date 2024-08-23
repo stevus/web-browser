@@ -562,6 +562,7 @@ Chrome, except without all of the Google Web Services integrations
 - https://gitlab.torproject.org/tpo/applications/mullvad-browser/
   - https://news.ycombinator.com/item?id=35421034
 - [Chawam - Terminal Web Browser](https://sr.ht/~bptato/chawan/)
+- https://github.com/Feodor2/Mypal68
 
 ## How Web Browsers Work
 
