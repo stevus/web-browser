@@ -312,6 +312,8 @@ Here is an example that the JS interpreter in SerenityOS uses:
 
 - https://serenityos.github.io/libjs-website/test262/
 - https://github.com/tc39/test262
+- https://wpt.fyi/results/?label=experimental&label=master&aligned
+- https://staging.wpt.fyi/results/?product=servo&product=ladybird
 
 ## GUI Toolkit
 
@@ -548,8 +550,11 @@ Chrome, except without all of the Google Web Services integrations
 - https://arc.net/
 - https://www.brow.sh/
   - https://news.ycombinator.com/item?id=17487552
+- https://github.com/versotile-org/verso
+  - https://news.ycombinator.com/item?id=41215727
 - https://servo.org/
   - https://github.com/rockxcn/book-1/blob/master/Develop%20the%20Servo%20Web%20Browser%20Engine%20using%20Rust.pdf
+  - https://servo.org/blog/2024/09/11/building-browser/
 - https://awesomekling.github.io/Ladybird-a-new-cross-platform-browser-project/
 - https://news.ycombinator.com/item?id=32809126
 - https://news.ycombinator.com/item?id=24170201
