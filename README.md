@@ -300,6 +300,8 @@ Several of these tend to be tied to a particular rendering engine.
 
 ### Links
 - https://boshen.github.io/javascript-parser-in-rust/docs/intro/
+- https://ruairidh.dev/build-your-own-ast/
+- https://ruairidh.dev/build-your-own-programming-language/
 
 Something related to how JS code is parsed into an IR (Intermediate Representation) making it better suited to a specific machine the browser is running on.
 - https://www.tutorialspoint.com/compiler_design/compiler_design_intermediate_code_generations.htm
