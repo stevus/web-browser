@@ -284,7 +284,7 @@ Nothing will fully match between Webkit, Firefox and Edge spacing because of NCS
 | SquirrelFish                                        | Webkit and adds JIT like TraceMonkey                                      |          |           |  |
 | V8                                                  | Google's Javascript engine used in Chrome and Opera                       |          |           |  |
 | [Chakra](https://github.com/chakra-core/ChakraCore) |                                                                           |          |           |  |
-|                                                     |                                                                           |          |           |  |
+| [Nova](https://github.com/trynova/nova)                                                    |                                                                           |          |           |  |
 
 A Javascript engine consists of a Lexer and a Parser.
 
@@ -297,6 +297,10 @@ Several of these tend to be tied to a particular rendering engine.
 ![image](https://github.com/stevus/web-browser/assets/1261603/51dcb107-4b4f-46df-a2dd-0ee178ad63ad)
 
 - https://web.archive.org/web/20230113174326im_/https://egbert.net/images/timeline-js-jit-engines.svg
+
+Nova Javasript Engine
+
+https://trynova.dev/
 
 ### Links
 - https://boshen.github.io/javascript-parser-in-rust/docs/intro/
