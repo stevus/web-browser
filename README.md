@@ -648,6 +648,7 @@ Image from https://brave.com/adauctions-economist/
 - https://github.com/qnoum/bypass-paywalls-chrome-clean-magnolia1234
 - [On configuring or refreshing ad block sources for uBlock](https://github.com/easylist/easylist/wiki/Youtube-Issues#youtube-ads-showing-pre-roll-and-mid-roll)
 - https://andadinosaur.com/youtube-s-anti-adblock-and-ublock-origin
+- https://github.com/popcar2/BadWebsiteBlocklist
 
 There is some happenings that YouTube is detecting and blocking ad-blockers so that's funny
 - https://community.brave.com/t/suddenly-getting-ad-blockers-are-not-allowed-on-youtube/507177/16
