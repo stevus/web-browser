@@ -297,6 +297,10 @@ Several of these tend to be tied to a particular rendering engine.
 ![image](https://github.com/stevus/web-browser/assets/1261603/51dcb107-4b4f-46df-a2dd-0ee178ad63ad)
 
 - https://web.archive.org/web/20230113174326im_/https://egbert.net/images/timeline-js-jit-engines.svg
+- 
+
+#### Detecting malicious intent in JS
+- https://blog.cloudflare.com/how-we-train-ai-to-uncover-malicious-javascript-intent-and-make-web-surfing-safer/
 
 Nova Javasript Engine
 
